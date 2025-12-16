@@ -1,0 +1,547 @@
+
+*** Running vivado
+    with args -log design_1_gpmc_axi_bridge_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_gpmc_axi_bridge_0_1.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Dec 14 17:39:22 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_gpmc_axi_bridge_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/murtyms/Vivado/2025.2/data/ip'.
+Command: synth_design -top design_1_gpmc_axi_bridge_0_1 -part xc7a200tffg1156-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tffg1156-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44136
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2288.863 ; gain = 492.875 ; free physical = 2032 ; free virtual = 9560
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9872] overwriting existing secondary unit 'behavior' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/hw_control_v3_2/hdl/xlclockdriver_rd_hwcntl.vhd:58]
+CRITICAL WARNING: [Synth 8-9872] overwriting existing secondary unit 'behavior' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/synth/design_1_gpmc_axi_bridge_0_1.vhd:88]
+INFO: [Synth 8-3491] module 'gpmc_axi_bridge' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:1581' bound to instance 'U0' of component 'gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/synth/design_1_gpmc_axi_bridge_0_1.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:1613]
+INFO: [Synth 8-638] synthesizing module 'gpmc_axi_bridge_struct' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:803]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_b305b62d65' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_b305b62d65' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_fa629975a4' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_fa629975a4' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_d1f34a1f92' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_d1f34a1f92' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_549bad11fe' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_549bad11fe' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_08fd53d81c' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_08fd53d81c' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'sysgen_inverter_8c34576c15' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_inverter_8c34576c15' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_9d4b3181e5' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_9d4b3181e5' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_8f3cbcb295' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_8f3cbcb295' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_2dfa32ddae' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:276]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_2dfa32ddae' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'xlregister_gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:30' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:364]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:21' bound to instance 'reg_comp' of component 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'xlregister_gpmc_axi_bridge' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'xlregister_gpmc_axi_bridge__parameterized0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:30' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:364]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:21' bound to instance 'reg_comp' of component 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'xlregister_gpmc_axi_bridge__parameterized0' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'xlregister_gpmc_axi_bridge__parameterized1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:30' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:364]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized3' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:21' bound to instance 'reg_comp' of component 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized3' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized3' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized3' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'xlregister_gpmc_axi_bridge__parameterized1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'sysgen_shift_281c4fb751' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:392]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_shift_281c4fb751' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:392]
+INFO: [Synth 8-638] synthesizing module 'xlslice_gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-256] done synthesizing module 'xlslice_gpmc_axi_bridge' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'xlslice_gpmc_axi_bridge__parameterized0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-256] done synthesizing module 'xlslice_gpmc_axi_bridge__parameterized0' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'xlslice_gpmc_axi_bridge__parameterized1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-256] done synthesizing module 'xlslice_gpmc_axi_bridge__parameterized1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'xlslice_gpmc_axi_bridge__parameterized2' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-256] done synthesizing module 'xlslice_gpmc_axi_bridge__parameterized2' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'xlregister_gpmc_axi_bridge__parameterized2' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+	Parameter width bound to: 19 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 19'b0000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:30' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:364]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized5' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+	Parameter width bound to: 19 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 19'b0000000000000000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:21' bound to instance 'reg_comp' of component 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized5' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized5' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized5' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'xlregister_gpmc_axi_bridge__parameterized2' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'xlregister_gpmc_axi_bridge__parameterized3' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+	Parameter width bound to: 32 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 32'b00000000000000000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:30' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:364]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized7' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+	Parameter width bound to: 32 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:21' bound to instance 'reg_comp' of component 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized7' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized7' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized7' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'xlregister_gpmc_axi_bridge__parameterized3' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:338]
+INFO: [Synth 8-638] synthesizing module 'sr_flop_27fd76287e' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9d7622fb5e' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:470]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9d7622fb5e' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:470]
+INFO: [Synth 8-638] synthesizing module 'xlconvert_gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:562]
+INFO: [Synth 8-256] done synthesizing module 'xlconvert_gpmc_axi_bridge' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:562]
+INFO: [Synth 8-256] done synthesizing module 'sr_flop_27fd76287e' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'sr_flop1_171797e57a' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'sr_flop1_171797e57a' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'sr_flop2_88b8ff2137' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'sr_flop2_88b8ff2137' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'sr_flop3_37f193c616' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:351]
+INFO: [Synth 8-256] done synthesizing module 'sr_flop3_37f193c616' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:351]
+INFO: [Synth 8-638] synthesizing module 'redge_det_f52227972b' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'xldelay_gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:673]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg.vhd:19' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:700]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg.vhd:29]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srl17e' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/srl17e.vhd:21' bound to instance 'last_srl17e' of component 'srl17e' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'srl17e' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/srl17e.vhd:30]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/srl17e.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'srl17e' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/srl17e.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'xldelay_gpmc_axi_bridge' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd:673]
+INFO: [Synth 8-256] done synthesizing module 'redge_det_f52227972b' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'redge_det1_a880eba569' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:515]
+INFO: [Synth 8-256] done synthesizing module 'redge_det1_a880eba569' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:515]
+INFO: [Synth 8-638] synthesizing module 'redge_det2_7d56bee8e0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:581]
+INFO: [Synth 8-256] done synthesizing module 'redge_det2_7d56bee8e0' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:581]
+INFO: [Synth 8-638] synthesizing module 'redge_det3_74cd140bb8' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:647]
+INFO: [Synth 8-256] done synthesizing module 'redge_det3_74cd140bb8' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:647]
+INFO: [Synth 8-638] synthesizing module 'redge_det4_cdc2ed7a05' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:713]
+INFO: [Synth 8-256] done synthesizing module 'redge_det4_cdc2ed7a05' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:713]
+INFO: [Synth 8-256] done synthesizing module 'gpmc_axi_bridge_struct' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:803]
+INFO: [Synth 8-638] synthesizing module 'default_clock_driver_gpmc_axi_bridge' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:1550]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd:58]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:30' bound to instance 'clr_reg' of component 'synth_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized9' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:21' bound to instance 'reg_comp' of component 'single_reg_w_init' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized9' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized9' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized9' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'default_clock_driver_gpmc_axi_bridge' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:1550]
+INFO: [Synth 8-256] done synthesizing module 'gpmc_axi_bridge' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd:1613]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gpmc_axi_bridge_0_1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/synth/design_1_gpmc_axi_bridge_0_1.vhd:88]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/imports/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd:211]
+INFO: [Synth 8-7129] Port clk in module sysgen_logical_9d4b3181e5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_logical_9d4b3181e5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_logical_9d4b3181e5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_inverter_8c34576c15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_inverter_8c34576c15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_inverter_8c34576c15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module synth_reg is either unconnected or has no load
+INFO: [Synth 8-7129] Port rst in module xldelay_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port en[0] in module xlconvert_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module xlconvert_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module xlconvert_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module xlconvert_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_constant_9d7622fb5e is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_constant_9d7622fb5e is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_constant_9d7622fb5e is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[1] in module xlslice_gpmc_axi_bridge__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[0] in module xlslice_gpmc_axi_bridge__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[18] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[17] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[16] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[15] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[14] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[13] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[12] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[11] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[10] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[9] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[8] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[7] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[6] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[5] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[4] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[3] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[2] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[0] in module xlslice_gpmc_axi_bridge__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[31] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[30] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[29] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[28] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[27] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[26] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[25] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[24] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[23] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[22] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[21] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[20] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[19] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[18] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[17] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[16] in module xlslice_gpmc_axi_bridge__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[15] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[14] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[13] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[12] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[11] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[10] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[9] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[8] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[7] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[6] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[5] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[4] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[3] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[2] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[1] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port x[0] in module xlslice_gpmc_axi_bridge is either unconnected or has no load
+INFO: [Synth 8-7129] Port ip[18] in module sysgen_shift_281c4fb751 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_shift_281c4fb751 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_shift_281c4fb751 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_shift_281c4fb751 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_mux_2dfa32ddae is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_mux_2dfa32ddae is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_mux_2dfa32ddae is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_logical_8f3cbcb295 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_logical_8f3cbcb295 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_logical_8f3cbcb295 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_constant_08fd53d81c is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_constant_08fd53d81c is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_constant_08fd53d81c is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_concat_549bad11fe is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_concat_549bad11fe is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_concat_549bad11fe is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_concat_d1f34a1f92 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_concat_d1f34a1f92 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_concat_d1f34a1f92 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_concat_fa629975a4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_concat_fa629975a4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_concat_fa629975a4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module sysgen_concat_b305b62d65 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module sysgen_concat_b305b62d65 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clr in module sysgen_concat_b305b62d65 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2380.801 ; gain = 584.812 ; free physical = 1902 ; free virtual = 9432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2395.645 ; gain = 599.656 ; free physical = 1902 ; free virtual = 9432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2395.645 ; gain = 599.656 ; free physical = 1902 ; free virtual = 9432
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2401.582 ; gain = 0.000 ; free physical = 1898 ; free virtual = 9429
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2503.414 ; gain = 0.000 ; free physical = 1895 ; free virtual = 9425
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDE => FDRE: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2503.449 ; gain = 0.000 ; free physical = 1895 ; free virtual = 9425
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2503.449 ; gain = 707.461 ; free physical = 1921 ; free virtual = 9462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2511.418 ; gain = 715.430 ; free physical = 1921 ; free virtual = 9462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2511.418 ; gain = 715.430 ; free physical = 1921 ; free virtual = 9462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2511.418 ; gain = 715.430 ; free physical = 1930 ; free virtual = 9473
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design design_1_gpmc_axi_bridge_0_1 has port m_axi_lite_araddr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpmc_axi_bridge_0_1 has port m_axi_lite_araddr[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpmc_axi_bridge_0_1 has port m_axi_lite_awaddr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpmc_axi_bridge_0_1 has port m_axi_lite_awaddr[0] driven by constant 0
+INFO: [Synth 8-3332] Sequential element (U0/default_clock_driver_gpmc_axi_bridge/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module design_1_gpmc_axi_bridge_0_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2511.418 ; gain = 715.430 ; free physical = 1950 ; free virtual = 9492
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2511.418 ; gain = 715.430 ; free physical = 1950 ; free virtual = 9492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2511.418 ; gain = 715.430 ; free physical = 1950 ; free virtual = 9492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     4|
+|2     |LUT2 |     5|
+|3     |LUT3 |    21|
+|4     |LUT4 |     3|
+|5     |FDE  |     5|
+|6     |FDRE |   133|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.230 ; gain = 797.242 ; free physical = 1736 ; free virtual = 9278
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2593.230 ; gain = 689.438 ; free physical = 1736 ; free virtual = 9278
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2593.238 ; gain = 797.242 ; free physical = 1741 ; free virtual = 9284
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2593.238 ; gain = 0.000 ; free physical = 1725 ; free virtual = 9268
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2727.711 ; gain = 0.000 ; free physical = 1719 ; free virtual = 9253
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDE => FDRE: 5 instances
+
+Synth Design complete | Checksum: 72ced76d
+INFO: [Common 17-83] Releasing license: Synthesis
+305 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 2727.746 ; gain = 1101.875 ; free physical = 1702 ; free virtual = 9236
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1787.472; main = 1711.276; forked = 236.884
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3536.477; main = 2727.715; forked = 995.055
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 87 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2751.723 ; gain = 0.000 ; free physical = 1694 ; free virtual = 9229
+INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/design_1_gpmc_axi_bridge_0_1_synth_1/design_1_gpmc_axi_bridge_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_gpmc_axi_bridge_0_1_utilization_synth.rpt -pb design_1_gpmc_axi_bridge_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 14 17:39:58 2025...

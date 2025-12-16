@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/sim/design_1_gpmc_axi_bridge_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_ad9361_spi_generic_0_0/sim/design_1_ad9361_spi_generic_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_ad9361_spi_generic_0_1/sim/design_1_ad9361_spi_generic_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_ad9361_spi_generic_1_0/sim/design_1_ad9361_spi_generic_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_ad9361_spi_generic_2_0/sim/design_1_ad9361_spi_generic_2_0.vhd" \
+"../../../bd/design_1/ip/design_1_ad9361_spi_generic_3_1/sim/design_1_ad9361_spi_generic_3_1.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+"../../../bd/design_1/ip/design_1_Blinky_0_0/sim/design_1_Blinky_0_0.vhd" \
+
+# Do not sort compile order
+nosort

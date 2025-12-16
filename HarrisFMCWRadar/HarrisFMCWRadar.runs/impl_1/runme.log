@@ -1,0 +1,1261 @@
+
+*** Running vivado
+    with args -log HARRIS_RADAR_TOP.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source HARRIS_RADAR_TOP.tcl -notrace
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Dec 14 21:35:50 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source HARRIS_RADAR_TOP.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/murtyms/Vivado/2025.2/data/ip'.
+Command: link_design -top HARRIS_RADAR_TOP -part xc7a200tffg1156-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tffg1156-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_Blinky_0_0/design_1_Blinky_0_0.dcp' for cell 'Radar_Design_i/design_1_i/Blinky_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_0_0/design_1_ad9361_spi_generic_0_0.dcp' for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_0_1/design_1_ad9361_spi_generic_0_1.dcp' for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_1_0/design_1_ad9361_spi_generic_1_0.dcp' for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_2_0/design_1_ad9361_spi_generic_2_0.dcp' for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_3_1/design_1_ad9361_spi_generic_3_1.dcp' for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_4'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0.dcp' for cell 'Radar_Design_i/design_1_i/axi_crossbar_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'Radar_Design_i/design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/design_1_gpmc_axi_bridge_0_1.dcp' for cell 'Radar_Design_i/design_1_i/gpmc_axi_bridge_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'Radar_Design_i/design_1_i/proc_sys_reset_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1831.180 ; gain = 0.000 ; free physical = 1283 ; free virtual = 8629
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'Radar_Design_i/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'Radar_Design_i/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'Radar_Design_i/design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2569.574 ; gain = 618.895 ; free physical = 723 ; free virtual = 8067
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'Radar_Design_i/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'Radar_Design_i/design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'Radar_Design_i/design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX?_LVDS_DOUT_?[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX?_LVDS_DIN_?[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN?_2P5_DOUT[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT?_2P5_DIN[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_CLK_OUT?_2P5_IN'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_EN_AGC_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_ENABLE_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RESET_N_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_FB_CLK_IN?_LVDS_OUT_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TX_FRM_IN?_LVDS_OUT_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TXNRX_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX?_LVDS_DIN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[6]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[7]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_CLK_OUT0_2P5_IN'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT0_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_EN_AGC_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_ENABLE_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_FB_CLK_IN0_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RESET_N_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT0_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TX_FRM_IN0_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TXNRX_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[6]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[7]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_CLK_OUT1_2P5_IN'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT1_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_EN_AGC_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_ENABLE_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_FB_CLK_IN1_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RESET_N_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT1_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TX_FRM_IN1_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TXNRX_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT2_2P5_DIN[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT2_2P5_DIN[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:131]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:131]
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc]
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc]
+WARNING: [Constraints 18-619] A clock with name 'CLK_25MHZ_FPGA' already exists, overwriting the previous clock with the same name. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:7]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SCAL_DAT_CLK_OUT0_LVDS_IN_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SCAL_DAT_CLK_OUT1_LVDS_IN_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SCAL_DAT_CLK_OUT2_LVDS_IN_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:27]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SCAL_DAT_CLK_OUT3_LVDS_IN_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:28]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SCAL_DAT_CLK_OUT4_LVDS_IN_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports AM3357_GMII2_TXCLK]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:36]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'BOARD_SUPPORT_i/DEBUG_BLOCK_I/MIC_CLK_GEN/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:43]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source [get_pins BOARD_SUPPORT_i/DEBUG_BLOCK_I/MIC_CLK_GEN/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:43]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_N[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:51]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_N[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:52]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_N[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_N[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:54]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_P[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_P[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_P[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {ADI_RX?_LVDS_DOUT_P[*]}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:58]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_N]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:59]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_N]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:60]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_N]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:61]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_N]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:62]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:63]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:64]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:65]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_TX_FRM_IN?_LVDS_OUT_P]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:66]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_ENABLE_IN?_2P5_OUT]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:67]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SCAL_ENABLE_IN?_2P5_OUT]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:68]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register0_43_27_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:71]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register0_43_27_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:71]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_alignment_i/tx_sync_i/PHASE_ALIGNMENT_DONE_reg*}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:94]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_clocks_i/tx_phase_alignment_done_sync_i/async_rst*_reg*}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:94]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_cells -hier -filter {name =~ *cpri_shared_alignment_i/tx_sync_i/PHASE_ALIGNMENT_DONE_reg*}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:94]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_clocks_i/reset_phalignment_out_reg}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:95]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_alignment_i/tx_sync_i/sync_RESET_PHALIGNMENT/data_sync0_i}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:95]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_cells -hier -filter {name =~ *cpri_shared_clocks_i/reset_phalignment_out_reg}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:95]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_clocks_i/tx_sync_rst_reg_inv}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:96]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_cells -hier -filter {name =~ *cpri_shared_clocks_i/tx_sync_rst_reg_inv}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:96]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/tx_modules_I/TX_ETH_INST.tx_ethernet_i/tx_eth_mii_I/rx_eth_ignore_tx_en_sync_i/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:111]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/tx_modules_I/TX_ETH_INST.tx_ethernet_i/tx_eth_mii_I/rx_eth_ignore_tx_en_sync_i/data_sync0_i/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:111]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/mgmnt_i/jam_bytes_int_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:112]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/rx_modules_I/RX_ETH_INST.rx_ethernet_I/rx_eth_mii_I/jam_count_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:112]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/mgmnt_i/jam_bytes_int_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:112]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/tx0_write_axi_x0_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:122]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins LAYSAN_CPRI_I/CPRI_AXI_S/tx0_write_axi_x0_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:122]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/TX0_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:124]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/cpri_0_csl_synchronizer_i/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:124]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins LAYSAN_CPRI_I/CPRI_AXI_S/TX0_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:124]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/RX0_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:127]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/cpri_0_csl_synchronizer_i1/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:127]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins LAYSAN_CPRI_I/CPRI_AXI_S/RX0_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:127]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/CTRL_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:130]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/cpri_0_csl_synchronizer_i2/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:130]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins LAYSAN_CPRI_I/CPRI_AXI_S/CTRL_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:130]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/RX_AXI_FIFO_I/U0/rx_axi_fifo_struct/sr_flop2/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:133]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/rx_fifo_reset_76_x0_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:133]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {LAYSAN_CPRI_I/CPRI_AXI_S/RX_AXI_FIFO_I/U0/rx_axi_fifo_struct/sr_flop2/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:133]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/RX_AXI_FIFO_I/U0/rx_axi_fifo_struct/sr_flop5/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:136]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/rx_fifo_reset_76_ctrl_x0_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:136]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {LAYSAN_CPRI_I/CPRI_AXI_S/RX_AXI_FIFO_I/U0/rx_axi_fifo_struct/sr_flop5/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:136]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'reset_iq_if_reg*/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:139]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins reset_iq_if_reg*/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:139]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[31]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:141]
+WARNING: [Vivado 12-508] No pins matched 'ad9361_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:141]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {rst_reg_x2_reg[31]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:141]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[31]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:142]
+WARNING: [Vivado 12-508] No pins matched 'SCAL_SYNC_2P5_OUT_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:142]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {rst_reg_x2_reg[31]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:142]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/up_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:148]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/up_xfer_toggle_m1_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:148]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/d_xfer_data_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:149]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/up_data_status_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:149]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/d_xfer_data_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:149]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/up_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:152]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/up_xfer_toggle_m1_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:152]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/d_xfer_data_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:153]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/up_data_status_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:153]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/d_xfer_data_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:153]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_cntrl/d_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:157]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_cntrl/d_xfer_toggle_m1_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:157]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_cntrl/d_data_cntrl_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:158]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_cntrl/d_data_cntrl_reg[*]/D}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:158]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/d_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:160]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/d_xfer_toggle_m1_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:160]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/up_xfer_data_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:161]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/d_data_cntrl_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:161]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/up_xfer_data_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:161]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/d_count_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:165]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/d_count_toggle_m1_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:165]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/up_count_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:166]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/up_count_toggle_m1_reg/D]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:166]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/up_d_count_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:167]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/up_d_count_reg[*]/D}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:167]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/up_resetn_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_rst_reg/i_rst_reg/PRE'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:170]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/up_resetn_reg/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:174]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:174]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register38_57_28_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:175]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register38_57_28_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:175]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:177]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:177]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {rst_reg_x2_reg[4]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:177]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:178]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/basic_frm_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:178]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:178]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:180]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/basic_frm_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:180]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[4]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:180]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:181]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:181]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {rst_reg_x2_reg[4]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:181]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:184]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/C]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:184]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register38_57_28_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:185]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register38_57_28_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:185]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:187]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:187]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {rst_reg_x2_reg[4]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:187]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:188]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/basic_frm_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:188]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[*]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:188]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:190]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/basic_frm_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:190]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[4]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:190]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:191]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:191]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {rst_reg_x2_reg[4]/C}]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:191]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc]
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2572.543 ; gain = 0.000 ; free physical = 720 ; free virtual = 8064
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+26 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2572.578 ; gain = 947.234 ; free physical = 720 ; free virtual = 8064
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2572.578 ; gain = 0.000 ; free physical = 701 ; free virtual = 8044
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2572.578 ; gain = 0.000 ; free physical = 700 ; free virtual = 8044
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Phase 1 Initialization | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1e4723ba4
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 29f241e54
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Retarget | Checksum: 29f241e54
+INFO: [Opt 31-389] Phase Retarget created 67 cells and removed 88 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 262abf873
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Constant propagation | Checksum: 262abf873
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 14 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Phase 5 Sweep | Checksum: 1d33f761d
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2914.355 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Sweep | Checksum: 1d33f761d
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 42 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1d33f761d
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+BUFG optimization | Checksum: 1d33f761d
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1d33f761d
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+Shift Register Optimization | Checksum: 1d33f761d
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1d33f761d
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+Post Processing Netlist | Checksum: 1d33f761d
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 10cf27974
+
+Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 10cf27974
+
+Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+Phase 9 Finalization | Checksum: 10cf27974
+
+Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              67  |              88  |                                              1  |
+|  Constant propagation         |               0  |              14  |                                              0  |
+|  Sweep                        |               0  |              42  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 10cf27974
+
+Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2946.371 ; gain = 32.016 ; free physical = 330 ; free virtual = 7675
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 10cf27974
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 10cf27974
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 330 ; free virtual = 7675
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_drc -file HARRIS_RADAR_TOP_drc_opted.rpt -pb HARRIS_RADAR_TOP_drc_opted.pb -rpx HARRIS_RADAR_TOP_drc_opted.rpx
+Command: report_drc -file HARRIS_RADAR_TOP_drc_opted.rpt -pb HARRIS_RADAR_TOP_drc_opted.pb -rpx HARRIS_RADAR_TOP_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+Write Physdb Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2946.371 ; gain = 0.000 ; free physical = 322 ; free virtual = 7667
+INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.406 ; gain = 0.000 ; free physical = 400 ; free virtual = 7634
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d11b64e4
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.406 ; gain = 0.000 ; free physical = 400 ; free virtual = 7634
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.406 ; gain = 0.000 ; free physical = 400 ; free virtual = 7634
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1cd764fe4
+
+Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2946.406 ; gain = 0.000 ; free physical = 398 ; free virtual = 7634
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 211c151e2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.71 . Memory (MB): peak = 2949.383 ; gain = 2.977 ; free physical = 398 ; free virtual = 7633
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 211c151e2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.72 . Memory (MB): peak = 2949.383 ; gain = 2.977 ; free physical = 398 ; free virtual = 7633
+Phase 1 Placer Initialization | Checksum: 211c151e2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.73 . Memory (MB): peak = 2949.383 ; gain = 2.977 ; free physical = 398 ; free virtual = 7633
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 265b0cf49
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.84 . Memory (MB): peak = 2949.383 ; gain = 2.977 ; free physical = 398 ; free virtual = 7633
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 21230bb13
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.94 . Memory (MB): peak = 2949.383 ; gain = 2.977 ; free physical = 396 ; free virtual = 7631
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 21230bb13
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 2949.383 ; gain = 2.977 ; free physical = 396 ; free virtual = 7631
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 2439fdbfa
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7625
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2439fdbfa
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7625
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 99 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 46 nets or LUTs. Breaked 0 LUT, combined 46 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 390 ; free virtual = 7625
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             46  |                    46  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             46  |                    46  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 26c6002b6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7627
+Phase 2.5 Global Place Phase2 | Checksum: 17fa991f3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7626
+Phase 2 Global Placement | Checksum: 17fa991f3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7626
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c3beea2c
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7626
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: eb784fa6
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7626
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: dd7578ed
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7626
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: ebf222f5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 391 ; free virtual = 7626
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1a16ad477
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 393 ; free virtual = 7628
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1a190d950
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 393 ; free virtual = 7628
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 18a27ed18
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 393 ; free virtual = 7628
+Phase 3 Detail Placement | Checksum: 18a27ed18
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 393 ; free virtual = 7628
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 226f2cc0f
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.214 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: f7e604a8
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 390 ; free virtual = 7626
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2410b5a44
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 390 ; free virtual = 7626
+Phase 4.1.1.1 BUFG Insertion | Checksum: 226f2cc0f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.214. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 28881696e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+Phase 4.1 Post Commit Optimization | Checksum: 28881696e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 28881696e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 28881696e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+Phase 4.3 Placer Reporting | Checksum: 28881696e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 390 ; free virtual = 7626
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1813f9709
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+Ending Placer Task | Checksum: fdf2734f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2957.387 ; gain = 10.980 ; free physical = 390 ; free virtual = 7626
+83 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2957.387 ; gain = 11.016 ; free physical = 390 ; free virtual = 7626
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file HARRIS_RADAR_TOP_utilization_placed.rpt -pb HARRIS_RADAR_TOP_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file HARRIS_RADAR_TOP_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 352 ; free virtual = 7589
+INFO: [Vivado 12-24828] Executing command : report_io -file HARRIS_RADAR_TOP_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7581
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7582
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7582
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7582
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7582
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7584
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7584
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7584
+Write Physdb Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 345 ; free virtual = 7584
+INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7567
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 3.214 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+94 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7567
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7567
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7567
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7567
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7569
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7569
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7569
+Write Physdb Complete: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 330 ; free virtual = 7569
+INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 5b300057 ConstDB: 0 ShapeSum: aa78794 RouteDB: 981aeb64
+Post Restoration Checksum: NetGraph: 86cc7a07 | NumContArr: 5ecf2d21 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 26aed9c62
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 358 ; free virtual = 7594
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 26aed9c62
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:50 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 358 ; free virtual = 7594
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 26aed9c62
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:50 . Memory (MB): peak = 2957.387 ; gain = 0.000 ; free physical = 358 ; free virtual = 7594
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 17b0ee012
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:51 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 319 ; free virtual = 7555
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.292  | TNS=0.000  | WHS=-0.151 | THS=-36.407|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 2166623f2
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:52 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 319 ; free virtual = 7555
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1958
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1958
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 239d0d884
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:52 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 312 ; free virtual = 7547
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 239d0d884
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:52 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 312 ; free virtual = 7547
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1527baeb4
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:52 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 312 ; free virtual = 7548
+Phase 4 Initial Routing | Checksum: 1527baeb4
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:52 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 312 ; free virtual = 7548
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 89
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.836  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2f9d1cf84
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+Phase 5 Rip-up And Reroute | Checksum: 2f9d1cf84
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 27871eb5f
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.923  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 27871eb5f
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 27871eb5f
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+Phase 6 Delay and Skew Optimization | Checksum: 27871eb5f
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.923  | TNS=0.000  | WHS=0.085  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2bd91fe35
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+Phase 7 Post Hold Fix | Checksum: 2bd91fe35
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.165907 %
+  Global Horizontal Routing Utilization  = 0.183576 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2bd91fe35
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2bd91fe35
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 288c5fc26
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 288c5fc26
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.923  | TNS=0.000  | WHS=0.085  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 288c5fc26
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+Total Elapsed time in route_design: 52.87 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: fc037d29
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: fc037d29
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+106 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2984.500 ; gain = 27.113 ; free physical = 304 ; free virtual = 7547
+INFO: [Vivado 12-24828] Executing command : report_drc -file HARRIS_RADAR_TOP_drc_routed.rpt -pb HARRIS_RADAR_TOP_drc_routed.pb -rpx HARRIS_RADAR_TOP_drc_routed.rpx
+Command: report_drc -file HARRIS_RADAR_TOP_drc_routed.rpt -pb HARRIS_RADAR_TOP_drc_routed.pb -rpx HARRIS_RADAR_TOP_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file HARRIS_RADAR_TOP_methodology_drc_routed.rpt -pb HARRIS_RADAR_TOP_methodology_drc_routed.pb -rpx HARRIS_RADAR_TOP_methodology_drc_routed.rpx
+Command: report_methodology -file HARRIS_RADAR_TOP_methodology_drc_routed.rpt -pb HARRIS_RADAR_TOP_methodology_drc_routed.pb -rpx HARRIS_RADAR_TOP_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file HARRIS_RADAR_TOP_timing_summary_routed.rpt -pb HARRIS_RADAR_TOP_timing_summary_routed.pb -rpx HARRIS_RADAR_TOP_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file HARRIS_RADAR_TOP_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file HARRIS_RADAR_TOP_route_status.rpt -pb HARRIS_RADAR_TOP_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file HARRIS_RADAR_TOP_bus_skew_routed.rpt -pb HARRIS_RADAR_TOP_bus_skew_routed.pb -rpx HARRIS_RADAR_TOP_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Vivado 12-24828] Executing command : report_power -file HARRIS_RADAR_TOP_power_routed.rpt -pb HARRIS_RADAR_TOP_power_summary_routed.pb -rpx HARRIS_RADAR_TOP_power_routed.rpx
+Command: report_power -file HARRIS_RADAR_TOP_power_routed.rpt -pb HARRIS_RADAR_TOP_power_summary_routed.pb -rpx HARRIS_RADAR_TOP_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+126 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file HARRIS_RADAR_TOP_clock_utilization_routed.rpt
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7445
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7445
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7445
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7446
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7447
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7448
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7448
+Write Physdb Complete: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2992.504 ; gain = 0.000 ; free physical = 207 ; free virtual = 7448
+INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/impl_1/HARRIS_RADAR_TOP_routed.dcp' has been generated.
+Command: write_bitstream -force HARRIS_RADAR_TOP.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./HARRIS_RADAR_TOP.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+137 Infos, 163 Warnings, 164 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3359.125 ; gain = 366.621 ; free physical = 185 ; free virtual = 7006
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 14 21:37:36 2025...

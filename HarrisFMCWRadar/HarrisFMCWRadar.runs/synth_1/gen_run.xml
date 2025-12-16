@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tffg1156-1" LaunchTime="1765766102" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/HARRIS_RADAR_TOP.dcp">
+  <File Type="VDS-TIMING-PB" Name="HARRIS_RADAR_TOP_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="HARRIS_RADAR_TOP_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="HARRIS_RADAR_TOP.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="HARRIS_RADAR_TOP_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="HARRIS_RADAR_TOP_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="HARRIS_RADAR_TOP_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="HARRIS_RADAR_TOP.vds"/>
+  <File Type="REPORTS-TCL" Name="HARRIS_RADAR_TOP_reports.tcl"/>
+  <File Type="PA-TCL" Name="HARRIS_RADAR_TOP.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/synth_reg_w_init.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/synth_reg_w_init.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/synth_reg_w_init.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/synth_reg_w_init.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/synth_reg_reg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/synth_reg_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/synth_reg_reg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/synth_reg_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/synth_reg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/synth_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/synth_reg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/synth_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/srl17e.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/srl17e.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/srl17e.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/srl17e.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/single_reg_w_init.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/single_reg_w_init.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/single_reg_w_init.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/single_reg_w_init.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/com/ad9361_spi_v3_3/src/ad9361_spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic.com/ad9361_spi_v3_3/src/ad9361_spi.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/com/axi_splitter_v1_1/axi_splitter.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic.com/axi_splitter_v1_1/axi_splitter.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/hw_control_entity_declarations.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/hw_control_entity_declarations.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/hw_control.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/hw_control.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/tek_meas_entity_declarations.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/tek_meas_entity_declarations.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/tek_meas.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/tek_meas.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/conv_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/conv_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/conv_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/conv_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/conv_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/conv_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge_entity_declarations.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/xlclockdriver_rd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/xlclockdriver_rd.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/hw_control_v3_2/hdl/xlclockdriver_rd_hwcntl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/hw_control_v3_2/hdl/xlclockdriver_rd_hwcntl.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/tek_meas_v6_2/hdl/xlclockdriver_rd_tek_meas.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_w_init.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/single_reg_w_init.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/srl17e.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/srl17e.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_reg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/synth_reg_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic/gpmc_axi_bridge_v2_0/hdl/gpmc_axi_bridge.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tektelic/com/ad9361_spi_v3_3/src/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/laysan_rrh.srcs/sources_1/bd/design_1/ipshared/tektelic.com/ad9361_spi_v3_3/src/spi_master.vhd"/>
+        <Attr Name="ImportTime" Val="1762715497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adi9361_spi_generic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Blinky.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HARRIS_RADAR_TOP.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="HARRIS_RADAR_TOP"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/constraints/laysan_rrh_top_pins.xdc"/>
+        <Attr Name="ImportTime" Val="1762715495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga_projects/rrh_rev1a/trunk/build/constraints/laysan_rrh_top_clocks.xdc"/>
+        <Attr Name="ImportTime" Val="1762715495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/HARRIS_RADAR_TOP.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Blinky_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_3_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_crossbar_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_gpmc_axi_bridge_0_1"/>
+</GenRun>

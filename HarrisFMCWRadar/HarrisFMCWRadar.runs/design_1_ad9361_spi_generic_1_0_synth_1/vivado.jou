@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Dec 14 17:36:18 2025
+# Process ID         : 41376
+# Current directory  : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/design_1_ad9361_spi_generic_1_0_synth_1
+# Command line       : vivado -log design_1_ad9361_spi_generic_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ad9361_spi_generic_1_0.tcl
+# Log file           : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/design_1_ad9361_spi_generic_1_0_synth_1/design_1_ad9361_spi_generic_1_0.vds
+# Journal file       : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/design_1_ad9361_spi_generic_1_0_synth_1/vivado.jou
+# Running On         : murtyms-Z270X-Gaming-7
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency      : 3600.261 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 16476 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18624 MB
+# Available Virtual  : 11898 MB
+#-----------------------------------------------------------
+source design_1_ad9361_spi_generic_1_0.tcl -notrace

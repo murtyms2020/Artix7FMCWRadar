@@ -1,0 +1,50 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Dec 14 21:37:15 2025
+| Host         : murtyms-Z270X-Gaming-7 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_methodology -file HARRIS_RADAR_TOP_methodology_drc_routed.rpt -pb HARRIS_RADAR_TOP_methodology_drc_routed.pb -rpx HARRIS_RADAR_TOP_methodology_drc_routed.rpx
+| Design       : HARRIS_RADAR_TOP
+| Device       : xc7a200tffg1156-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 2
++--------+----------+--------------------------------------------------------+--------+
+| Rule   | Severity | Description                                            | Checks |
++--------+----------+--------------------------------------------------------+--------+
+| XDCC-1 | Warning  | Scoped Clock constraint overwritten with the same name | 1      |
+| XDCC-7 | Warning  | Scoped Clock constraint overwritten on the same source | 1      |
++--------+----------+--------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 40.000 -name CLK_25MHZ_FPGA -waveform {0.000 20.000} [get_ports CLK_25MHZ_FPGA] (Source: /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc (Line: 7))
+Previous: create_clock -period 40.000 [get_ports CLK_25MHZ_FPGA] (Source: /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc (Line: 53))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 40.000 -name CLK_25MHZ_FPGA -waveform {0.000 20.000} [get_ports CLK_25MHZ_FPGA] (Source: /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc (Line: 7))
+Previous: create_clock -period 40.000 [get_ports CLK_25MHZ_FPGA] (Source: /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc (Line: 53))
+Related violations: <none>
+
+

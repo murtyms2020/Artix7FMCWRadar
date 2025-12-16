@@ -1,0 +1,610 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Dec 14 21:35:05 2025
+# Process ID         : 73407
+# Current directory  : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1
+# Command line       : vivado -log HARRIS_RADAR_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HARRIS_RADAR_TOP.tcl
+# Log file           : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/HARRIS_RADAR_TOP.vds
+# Journal file       : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/vivado.jou
+# Running On         : murtyms-Z270X-Gaming-7
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency      : 3697.316 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 16476 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18624 MB
+# Available Virtual  : 9352 MB
+#-----------------------------------------------------------
+source HARRIS_RADAR_TOP.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/murtyms/Vivado/2025.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/utils_1/imports/synth_1/HARRIS_RADAR_TOP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/utils_1/imports/synth_1/HARRIS_RADAR_TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top HARRIS_RADAR_TOP -part xc7a200tffg1156-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tffg1156-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 73452
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2290.883 ; gain = 484.156 ; free physical = 489 ; free virtual = 7834
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HARRIS_RADAR_TOP' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:273]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-3491] module 'design_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:54]
+INFO: [Synth 8-3491] module 'design_1_Blinky_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_Blinky_0_0_stub.vhdl:6' bound to instance 'Blinky_0' of component 'design_1_Blinky_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:437]
+INFO: [Synth 8-638] synthesizing module 'design_1_Blinky_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_Blinky_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_0' of component 'design_1_ad9361_spi_generic_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_0_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_1_stub.vhdl:6' bound to instance 'ad9361_spi_generic_1' of component 'design_1_ad9361_spi_generic_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:471]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_1_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_1_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_1_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_2' of component 'design_1_ad9361_spi_generic_1_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:499]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_1_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_1_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_2_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_2_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_3' of component 'design_1_ad9361_spi_generic_2_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:527]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_2_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_2_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_3_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_3_1_stub.vhdl:6' bound to instance 'ad9361_spi_generic_4' of component 'design_1_ad9361_spi_generic_3_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:555]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_3_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_3_1_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_axi_crossbar_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_axi_crossbar_0_0_stub.vhdl:6' bound to instance 'axi_crossbar_0' of component 'design_1_axi_crossbar_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:583]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_crossbar_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_axi_crossbar_0_0_stub.vhdl:58]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:702]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_clk_wiz_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_gpmc_axi_bridge_0_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_gpmc_axi_bridge_0_1_stub.vhdl:6' bound to instance 'gpmc_axi_bridge_1' of component 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:712]
+INFO: [Synth 8-638] synthesizing module 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_gpmc_axi_bridge_0_1_stub.vhdl:47]
+INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'design_1_proc_sys_reset_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:742]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-256] done synthesizing module 'HARRIS_RADAR_TOP' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:273]
+WARNING: [Synth 8-3848] Net GPMC_WAIT in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:201]
+WARNING: [Synth 8-3848] Net ARINC_429_CS_N in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:207]
+WARNING: [Synth 8-3848] Net ARINC_429_SCK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:208]
+WARNING: [Synth 8-3848] Net ARINC_429_SDI in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:209]
+WARNING: [Synth 8-3848] Net CALSW in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:211]
+WARNING: [Synth 8-3848] Net CALSW_TXRX in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:212]
+WARNING: [Synth 8-3848] Net CLK_DIST_CLK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:213]
+WARNING: [Synth 8-3848] Net CLK_DIST_CS in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:214]
+WARNING: [Synth 8-3848] Net CLK_DIST_SDI in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:216]
+WARNING: [Synth 8-3848] Net LMK04308_SYNC in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:217]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_RXLO_CLK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:218]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_RXLO_CS in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:219]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_RXLO_MUTE in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:220]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_RXLO_REF in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:221]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_RXLO_SDI in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:222]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_TXLO_CLK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:225]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_TXLO_CS in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:226]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_TXLO_MUTE in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:227]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_TXLO_REF in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:228]
+WARNING: [Synth 8-3848] Net LO_CNTRL_3P3_TXLO_SDI in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:229]
+WARNING: [Synth 8-3848] Net POW_DET_SW in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:232]
+WARNING: [Synth 8-3848] Net SCAL_SYNC_2P5_OUT in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:233]
+WARNING: [Synth 8-3848] Net TEMP_SENSE_CS_N in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:235]
+WARNING: [Synth 8-3848] Net TEMP_SENSE_SCK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:236]
+WARNING: [Synth 8-3848] Net TX_EN in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:238]
+WARNING: [Synth 8-3848] Net FPGA_SPI_MISO in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:242]
+WARNING: [Synth 8-3848] Net FPGA_DEBUG_HEAD in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:263]
+WARNING: [Synth 8-3848] Net FPGA_DEBUG_MIC_CLK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:264]
+WARNING: [Synth 8-3848] Net FPGA_DEBUG_MICA in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:266]
+WARNING: [Synth 8-3848] Net FPGA_DEBUG_MICB in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:267]
+WARNING: [Synth 8-3848] Net FPGA_DEBUG_MICB_CLK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:268]
+WARNING: [Synth 8-7129] Port GPMC_WAIT in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARINC_429_CS_N in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARINC_429_SCK in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARINC_429_SDI in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[8] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[7] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[6] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[5] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[4] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[3] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[2] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CALSW_TXRX in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_DIST_CLK in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_DIST_CS in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_DIST_SDI in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMK04308_SYNC in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_RXLO_CLK in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_RXLO_CS in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_RXLO_MUTE in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_RXLO_REF in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_RXLO_SDI in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_TXLO_CLK in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_TXLO_CS in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_TXLO_MUTE in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_TXLO_REF in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LO_CNTRL_3P3_TXLO_SDI in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POW_DET_SW[4] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POW_DET_SW[3] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POW_DET_SW[2] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POW_DET_SW[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POW_DET_SW[0] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCAL_SYNC_2P5_OUT in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEMP_SENSE_CS_N in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEMP_SENSE_SCK in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TX_EN[3] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TX_EN[2] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TX_EN[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TX_EN[0] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_SPI_MISO in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[6] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[5] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[4] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[3] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[2] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[0] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MIC_CLK in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[31] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[30] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[29] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[28] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[27] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[26] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[25] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[24] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[23] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[22] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[21] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[20] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[19] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[18] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[17] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[16] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[15] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[14] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[13] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[12] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[11] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[10] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[9] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[8] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[7] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[6] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[5] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[4] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[3] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[2] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[0] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[31] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[30] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[29] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[28] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[27] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[26] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[25] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[24] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[23] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[22] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[21] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[20] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[19] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[18] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[17] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[16] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[15] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[14] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[13] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[12] in module HARRIS_RADAR_TOP is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.852 ; gain = 575.125 ; free physical = 393 ; free virtual = 7746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.852 ; gain = 575.125 ; free physical = 393 ; free virtual = 7746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.852 ; gain = 575.125 ; free physical = 393 ; free virtual = 7746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2384.820 ; gain = 0.000 ; free physical = 393 ; free virtual = 7746
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/design_1_gpmc_axi_bridge_0_1/design_1_gpmc_axi_bridge_0_1_in_context.xdc] for cell 'Radar_Design_i/design_1_i/gpmc_axi_bridge_1'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_gpmc_axi_bridge_0_1/design_1_gpmc_axi_bridge_0_1/design_1_gpmc_axi_bridge_0_1_in_context.xdc] for cell 'Radar_Design_i/design_1_i/gpmc_axi_bridge_1'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_0_0/design_1_ad9361_spi_generic_0_0/design_1_ad9361_spi_generic_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_0_0/design_1_ad9361_spi_generic_0_0/design_1_ad9361_spi_generic_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_0_1/design_1_ad9361_spi_generic_0_1/design_1_ad9361_spi_generic_0_1_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_1'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_0_1/design_1_ad9361_spi_generic_0_1/design_1_ad9361_spi_generic_0_1_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_1'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_1_0/design_1_ad9361_spi_generic_1_0/design_1_ad9361_spi_generic_1_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_2'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_1_0/design_1_ad9361_spi_generic_1_0/design_1_ad9361_spi_generic_1_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_2'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_2_0/design_1_ad9361_spi_generic_2_0/design_1_ad9361_spi_generic_2_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_3'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_2_0/design_1_ad9361_spi_generic_2_0/design_1_ad9361_spi_generic_2_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_3'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_3_1/design_1_ad9361_spi_generic_3_1/design_1_ad9361_spi_generic_3_1_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_4'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_ad9361_spi_generic_3_1/design_1_ad9361_spi_generic_3_1/design_1_ad9361_spi_generic_3_1_in_context.xdc] for cell 'Radar_Design_i/design_1_i/ad9361_spi_generic_4'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/clk_wiz_0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/clk_wiz_0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/proc_sys_reset_0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/axi_crossbar_0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/axi_crossbar_0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_Blinky_0_0/design_1_Blinky_0_0/design_1_Blinky_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/Blinky_0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_Blinky_0_0/design_1_Blinky_0_0/design_1_Blinky_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/Blinky_0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX?_LVDS_DOUT_?[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX?_LVDS_DIN_?[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN?_2P5_DOUT[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT?_2P5_DIN[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_CLK_OUT?_2P5_IN'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_EN_AGC_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_ENABLE_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RESET_N_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_FB_CLK_IN?_LVDS_OUT_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TX_FRM_IN?_LVDS_OUT_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TXNRX_IN?_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT?_LVDS_IN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX?_LVDS_DIN_?'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX0_LVDS_DOUT_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX0_LVDS_DIN_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN0_2P5_DOUT[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[6]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT0_2P5_DIN[7]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_CLK_OUT0_2P5_IN'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT0_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_EN_AGC_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_ENABLE_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_FB_CLK_IN0_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RESET_N_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT0_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TX_FRM_IN0_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TXNRX_IN0_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX1_LVDS_DOUT_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX1_LVDS_DIN_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN1_2P5_DOUT[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[6]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT1_2P5_DIN[7]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_CLK_OUT1_2P5_IN'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_DAT_CLK_OUT1_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_EN_AGC_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_ENABLE_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_FB_CLK_IN1_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RESET_N_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_RX_FRM_OUT1_LVDS_IN_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TX_FRM_IN1_LVDS_OUT_P'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'SCAL_TXNRX_IN1_2P5_OUT'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'ADI_RX2_LVDS_DOUT_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[4]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'ADI_TX2_LVDS_DIN_P[5]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[2]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_IN2_2P5_DOUT[3]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT2_2P5_DIN[0]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'CTRL_OUT2_2P5_DIN[1]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:131]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:131]
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/HARRIS_RADAR_TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HARRIS_RADAR_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HARRIS_RADAR_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc]
+WARNING: [Constraints 18-619] A clock with name 'CLK_25MHZ_FPGA' already exists, overwriting the previous clock with the same name. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:7]
+WARNING: [Vivado 12-508] No pins matched 'BOARD_SUPPORT_i/DEBUG_BLOCK_I/MIC_CLK_GEN/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:43]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register0_43_27_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:71]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_alignment_i/tx_sync_i/PHASE_ALIGNMENT_DONE_reg*}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:94]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_clocks_i/tx_phase_alignment_done_sync_i/async_rst*_reg*}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:94]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_clocks_i/reset_phalignment_out_reg}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:95]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_alignment_i/tx_sync_i/sync_RESET_PHALIGNMENT/data_sync0_i}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:95]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *cpri_shared_clocks_i/tx_sync_rst_reg_inv}'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:96]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/tx_modules_I/TX_ETH_INST.tx_ethernet_i/tx_eth_mii_I/rx_eth_ignore_tx_en_sync_i/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:111]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/mgmnt_i/jam_bytes_int_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:112]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/cpri_i/U0/cpri_i/cpri_options.cpri_i/rx_modules_I/RX_ETH_INST.rx_ethernet_I/rx_eth_mii_I/jam_count_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:112]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/tx0_write_axi_x0_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:122]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/TX0_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:124]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/cpri_0_csl_synchronizer_i/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:124]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/RX0_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:127]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/cpri_0_csl_synchronizer_i1/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:127]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/CTRL_I_CPRI_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/gpf2.prog_full_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:130]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/cpri_0_csl_synchronizer_i2/data_sync0_i/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:130]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/RX_AXI_FIFO_I/U0/rx_axi_fifo_struct/sr_flop2/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:133]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/rx_fifo_reset_76_x0_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:133]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/RX_AXI_FIFO_I/U0/rx_axi_fifo_struct/sr_flop5/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:136]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_AXI_S/rx_fifo_reset_76_ctrl_x0_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:136]
+WARNING: [Vivado 12-508] No pins matched 'reset_iq_if_reg*/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:139]
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[31]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:141]
+WARNING: [Vivado 12-508] No pins matched 'ad9361_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:141]
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[31]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:142]
+WARNING: [Vivado 12-508] No pins matched 'SCAL_SYNC_2P5_OUT_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:142]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/up_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:148]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/d_xfer_data_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:149]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_status/up_data_status_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:149]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/up_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:152]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/d_xfer_data_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:153]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_status/up_data_status_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:153]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_cntrl/d_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:157]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_rx_channel*/i_up_adc_channel/i_adc_xfer_cntrl/d_data_cntrl_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:158]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/d_xfer_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:160]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/up_xfer_data_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:161]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_xfer_cntrl/d_data_cntrl_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:161]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/d_count_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:165]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/up_count_toggle_m1_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:166]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_clock_mon/up_d_count_reg[*]/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:167]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/up_resetn_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/ad9361_if/radio_block*/axi_ad9361_0/inst/i_rx/i_up_adc_common/i_adc_rst_reg/i_rst_reg/PRE'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:174]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register38_57_28_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:175]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:180]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/basic_frm_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:180]
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:181]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:181]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:184]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register38_57_28_reg[*]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:185]
+WARNING: [Vivado 12-508] No pins matched 'DATA_PROCESSING_i/board_mgmt/hw_control_0/U0/hw_control_struct/mcode1/register34_56_28_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:190]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/basic_frm_sync_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:190]
+WARNING: [Vivado 12-508] No pins matched 'rst_reg_x2_reg[4]/C'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:191]
+WARNING: [Vivado 12-508] No pins matched 'LAYSAN_CPRI_I/CPRI_BLOCK_I/tready_not_sync_i_reg/D'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc:191]
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/HARRIS_RADAR_TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HARRIS_RADAR_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HARRIS_RADAR_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2465.621 ; gain = 0.000 ; free physical = 438 ; free virtual = 7789
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2465.656 ; gain = 0.000 ; free physical = 438 ; free virtual = 7789
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2465.656 ; gain = 658.930 ; free physical = 482 ; free virtual = 7826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 482 ; free virtual = 7826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 482 ; free virtual = 7826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 484 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 490 ; free virtual = 7840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'CLK_25MHZ_FPGA'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2543.625 ; gain = 736.898 ; free physical = 402 ; free virtual = 7755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2543.625 ; gain = 736.898 ; free physical = 402 ; free virtual = 7755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2554.648 ; gain = 747.922 ; free physical = 395 ; free virtual = 7747
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |design_1_Blinky_0_0             |         1|
+|2     |design_1_ad9361_spi_generic_0_0 |         1|
+|3     |design_1_ad9361_spi_generic_0_1 |         1|
+|4     |design_1_ad9361_spi_generic_1_0 |         1|
+|5     |design_1_ad9361_spi_generic_2_0 |         1|
+|6     |design_1_ad9361_spi_generic_3_1 |         1|
+|7     |design_1_axi_crossbar_0_0       |         1|
+|8     |design_1_clk_wiz_0_0            |         1|
+|9     |design_1_gpmc_axi_bridge_0_1    |         1|
+|10    |design_1_proc_sys_reset_0_0     |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |design_1_Blinky_0_0_bbox             |     1|
+|2     |design_1_ad9361_spi_generic_0_0_bbox |     1|
+|3     |design_1_ad9361_spi_generic_0_1_bbox |     1|
+|4     |design_1_ad9361_spi_generic_1_0_bbox |     1|
+|5     |design_1_ad9361_spi_generic_2_0_bbox |     1|
+|6     |design_1_ad9361_spi_generic_3_1_bbox |     1|
+|7     |design_1_axi_crossbar_0_0_bbox       |     1|
+|8     |design_1_clk_wiz_0_0_bbox            |     1|
+|9     |design_1_gpmc_axi_bridge_0_1_bbox    |     1|
+|10    |design_1_proc_sys_reset_0_0_bbox     |     1|
+|11    |IBUF                                 |    13|
+|12    |IOBUF                                |    16|
+|13    |OBUF                                 |    17|
+|14    |OBUFT                                |   113|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 155 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2740.461 ; gain = 849.930 ; free physical = 228 ; free virtual = 7580
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2740.469 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2740.469 ; gain = 0.000 ; free physical = 228 ; free virtual = 7580
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2740.469 ; gain = 0.000 ; free physical = 404 ; free virtual = 7755
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Synth Design complete | Checksum: 21028c82
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:36 . Memory (MB): peak = 2740.496 ; gain = 1114.762 ; free physical = 403 ; free virtual = 7755
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1877.523; main = 1877.523; forked = 282.847
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3476.684; main = 2740.465; forked = 995.055
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2764.473 ; gain = 0.000 ; free physical = 403 ; free virtual = 7755
+INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/HARRIS_RADAR_TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file HARRIS_RADAR_TOP_utilization_synth.rpt -pb HARRIS_RADAR_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 14 21:35:47 2025...
