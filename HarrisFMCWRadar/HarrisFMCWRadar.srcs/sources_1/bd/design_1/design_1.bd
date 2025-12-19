@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8424A6B03AE80958",
+      "boundary_crc": "0x64764000D2D88BC3",
       "device": "xc7a200tffg1156-1",
       "gen_directory": "../../../../HarrisFMCWRadar.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -20,7 +20,8 @@
       "clk_wiz_0": "",
       "proc_sys_reset_0": "",
       "axi_crossbar_0": "",
-      "Blinky_0": ""
+      "Blinky_0": "",
+      "axi_gpio_0": ""
     },
     "ports": {
       "advn": {
@@ -152,6 +153,11 @@
       "fpga_led": {
         "direction": "O",
         "left": "1",
+        "right": "0"
+      },
+      "gpio_io_o_0": {
+        "direction": "O",
+        "left": "6",
         "right": "0"
       }
     },
@@ -1924,7 +1930,7 @@
             "value": "19"
           },
           "NUM_MI": {
-            "value": "5"
+            "value": "6"
           },
           "PROTOCOL": {
             "value": "AXI4LITE"
@@ -1934,7 +1940,7 @@
           "S00_AXI": {
             "bd_attributes": {
               "BRIDGES": {
-                "value": "M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI",
+                "value": "M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI",
                 "value_src": "auto"
               },
               "TYPE": {
@@ -1949,7 +1955,8 @@
               "M01_AXI",
               "M02_AXI",
               "M03_AXI",
-              "M04_AXI"
+              "M04_AXI",
+              "M05_AXI"
             ]
           },
           "M00_AXI": {
@@ -1985,6 +1992,14 @@
             }
           },
           "M04_AXI": {
+            "bd_attributes": {
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          },
+          "M05_AXI": {
             "bd_attributes": {
               "TYPE": {
                 "value": "interior",
@@ -2046,6 +2061,22 @@
             "right": "0"
           }
         }
+      },
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "ip_revision": "37",
+        "xci_name": "design_1_axi_gpio_0_0",
+        "xci_path": "ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "7"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2077,6 +2108,12 @@
         "interface_ports": [
           "axi_crossbar_0/M04_AXI",
           "ad9361_spi_generic_4/S_AXI"
+        ]
+      },
+      "axi_crossbar_0_M05_AXI": {
+        "interface_ports": [
+          "axi_crossbar_0/M05_AXI",
+          "axi_gpio_0/S_AXI"
         ]
       },
       "gpmc_axi_bridge_1_m_axi_lite": {
@@ -2237,6 +2274,12 @@
           "gpmc_axi_bridge_1/advn"
         ]
       },
+      "axi_gpio_0_gpio_io_o": {
+        "ports": [
+          "axi_gpio_0/gpio_io_o",
+          "gpio_io_o_0"
+        ]
+      },
       "clk_wiz_0_clk_out2": {
         "ports": [
           "clk_wiz_0/clk_out2",
@@ -2248,7 +2291,8 @@
           "ad9361_spi_generic_2/S_AXI_ACLK",
           "proc_sys_reset_0/slowest_sync_clk",
           "gpmc_axi_bridge_1/clk",
-          "Blinky_0/clk"
+          "Blinky_0/clk",
+          "axi_gpio_0/s_axi_aclk"
         ]
       },
       "clk_wiz_0_locked": {
@@ -2292,7 +2336,8 @@
           "ad9361_spi_generic_4/S_AXI_ARESETN",
           "gpmc_axi_bridge_1/m_axi_lite_aresetn",
           "axi_crossbar_0/aresetn",
-          "Blinky_0/rst_n"
+          "Blinky_0/rst_n",
+          "axi_gpio_0/s_axi_aresetn"
         ]
       },
       "wen_0_1": {
@@ -2309,27 +2354,32 @@
             "segments": {
               "SEG_ad9361_spi_generic_0_reg0": {
                 "address_block": "/ad9361_spi_generic_0/S_AXI/reg0",
-                "offset": "0x00000",
+                "offset": "0x01000",
                 "range": "4K"
               },
               "SEG_ad9361_spi_generic_1_reg0": {
                 "address_block": "/ad9361_spi_generic_1/S_AXI/reg0",
-                "offset": "0x10000",
+                "offset": "0x02000",
                 "range": "4K"
               },
               "SEG_ad9361_spi_generic_2_reg0": {
                 "address_block": "/ad9361_spi_generic_2/S_AXI/reg0",
-                "offset": "0x01000",
+                "offset": "0x03000",
                 "range": "4K"
               },
               "SEG_ad9361_spi_generic_3_reg0": {
                 "address_block": "/ad9361_spi_generic_3/S_AXI/reg0",
-                "offset": "0x02000",
+                "offset": "0x04000",
                 "range": "4K"
               },
               "SEG_ad9361_spi_generic_4_reg0": {
                 "address_block": "/ad9361_spi_generic_4/S_AXI/reg0",
-                "offset": "0x03000",
+                "offset": "0x05000",
+                "range": "4K"
+              },
+              "SEG_axi_gpio_0_Reg": {
+                "address_block": "/axi_gpio_0/S_AXI/Reg",
+                "offset": "0x07000",
                 "range": "4K"
               }
             }

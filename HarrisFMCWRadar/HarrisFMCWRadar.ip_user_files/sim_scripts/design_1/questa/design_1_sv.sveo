@@ -95,7 +95,8 @@ design_1_sv your_instance_name (
   .clk_25MHZ(clk_25MHZ), // input wire clk_25MHZ
   .ext_reset_in_0(ext_reset_in_0), // input wire ext_reset_in_0
   .read_data_out(read_data_out), // output wire [15:0] read_data_out
-  .fpga_led(fpga_led) // output wire [1:0] fpga_led
+  .fpga_led(fpga_led), // output wire [1:0] fpga_led
+  .gpio_io_o_0(gpio_io_o_0) // output wire [6:0] gpio_io_o_0
 );
 // INST_TAG_END ------  End cut for WRAPPER INSTANTIATION Template  ------
 

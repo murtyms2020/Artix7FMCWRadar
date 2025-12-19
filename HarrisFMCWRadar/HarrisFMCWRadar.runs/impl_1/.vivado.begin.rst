@@ -1,20 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="murtyms" Host="murtyms-Z270X-Gaming-7" Pid="44957" HostCore="4" HostMemory="16090428">
+    <Process Command="vivado" Owner="murtyms" Host="murtyms-Z270X-Gaming-7" Pid="10411" HostCore="4" HostMemory="16090424">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="murtyms" Host="murtyms-Z270X-Gaming-7" Pid="70350" HostCore="4" HostMemory="16090428">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="murtyms" Host="murtyms-Z270X-Gaming-7" Pid="71423" HostCore="4" HostMemory="16090428">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="murtyms" Host="murtyms-Z270X-Gaming-7" Pid="73576" HostCore="4" HostMemory="16090428">
+    <Process Command="vivado" Owner="murtyms" Host="murtyms-Z270X-Gaming-7" Pid="13788" HostCore="4" HostMemory="16090424">
     </Process>
 </ProcessHandle>

@@ -196,8 +196,8 @@
             },
             "V3": {
                 "VT": "AC",
-                "BA": "0x00000",
-                "HA": "0x00FFF",
+                "BA": "0x01000",
+                "HA": "0x01FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "m_axi_lite",
@@ -214,8 +214,26 @@
             },
             "V4": {
                 "VT": "AC",
-                "BA": "0x01000",
-                "HA": "0x01FFF",
+                "BA": "0x02000",
+                "HA": "0x02FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "m_axi_lite",
+                "MX": "/gpmc_axi_bridge_1",
+                "MI": "m_axi_lite",
+                "MS": "SEG_ad9361_spi_generic_1_reg0",
+                "MV": "xilinx.com:module_ref:gpmc_axi_bridge:1.0",
+                "SX": "/ad9361_spi_generic_1",
+                "SI": "S_AXI",
+                "SS": "reg0",
+                "SV": "xilinx.com:module_ref:ad9361_spi_generic:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V5": {
+                "VT": "AC",
+                "BA": "0x03000",
+                "HA": "0x03FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "m_axi_lite",
@@ -230,10 +248,10 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V5": {
+            "V6": {
                 "VT": "AC",
-                "BA": "0x02000",
-                "HA": "0x02FFF",
+                "BA": "0x04000",
+                "HA": "0x04FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "m_axi_lite",
@@ -248,10 +266,10 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V6": {
+            "V7": {
                 "VT": "AC",
-                "BA": "0x03000",
-                "HA": "0x03FFF",
+                "BA": "0x05000",
+                "HA": "0x05FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "m_axi_lite",
@@ -266,21 +284,21 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V7": {
+            "V8": {
                 "VT": "AC",
-                "BA": "0x10000",
-                "HA": "0x10FFF",
+                "BA": "0x07000",
+                "HA": "0x07FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "m_axi_lite",
                 "MX": "/gpmc_axi_bridge_1",
                 "MI": "m_axi_lite",
-                "MS": "SEG_ad9361_spi_generic_1_reg0",
+                "MS": "SEG_axi_gpio_0_Reg",
                 "MV": "xilinx.com:module_ref:gpmc_axi_bridge:1.0",
-                "SX": "/ad9361_spi_generic_1",
+                "SX": "/axi_gpio_0",
                 "SI": "S_AXI",
-                "SS": "reg0",
-                "SV": "xilinx.com:module_ref:ad9361_spi_generic:1.0",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_gpio:2.0",
                 "TM": "both",
                 "TU": "register"
             }
@@ -316,6 +334,11 @@
             },
             {
                 "src": "V7",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V8",
                 "trg": "V2",
                 "EH": "2"
             }

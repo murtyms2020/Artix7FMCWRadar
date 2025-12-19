@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sun Dec 14 21:35:47 2025
+| Date         : Thu Dec 18 21:06:21 2025
 | Host         : murtyms-Z270X-Gaming-7 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file HARRIS_RADAR_TOP_utilization_synth.rpt -pb HARRIS_RADAR_TOP_utilization_synth.pb
 | Design       : HARRIS_RADAR_TOP
@@ -154,9 +154,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUFT    |  129 |                  IO |
+| OBUFT    |  122 |                  IO |
 | IBUF     |   29 |                  IO |
-| OBUF     |   17 |                  IO |
+| OBUF     |   24 |                  IO |
 +----------+------+---------------------+
 
 
@@ -169,6 +169,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | design_1_proc_sys_reset_0_0     |    1 |
 | design_1_gpmc_axi_bridge_0_1    |    1 |
 | design_1_clk_wiz_0_0            |    1 |
+| design_1_axi_gpio_0_0           |    1 |
 | design_1_axi_crossbar_0_0       |    1 |
 | design_1_ad9361_spi_generic_3_1 |    1 |
 | design_1_ad9361_spi_generic_2_0 |    1 |

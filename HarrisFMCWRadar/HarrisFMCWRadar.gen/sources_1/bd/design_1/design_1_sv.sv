@@ -112,7 +112,9 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   output wire [15:0] read_data_out,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire [1:0] fpga_led
+  output wire [1:0] fpga_led,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire [6:0] gpio_io_o_0
 );
 
   design_1 inst (
@@ -145,7 +147,8 @@ module design_1_sv (
     .clk_25MHZ(clk_25MHZ),
     .ext_reset_in_0(ext_reset_in_0),
     .read_data_out(read_data_out),
-    .fpga_led(fpga_led)
+    .fpga_led(fpga_led),
+    .gpio_io_o_0(gpio_io_o_0)
   );
 
 endmodule

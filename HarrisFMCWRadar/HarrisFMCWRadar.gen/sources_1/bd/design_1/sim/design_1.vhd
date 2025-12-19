@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Sun Dec 14 21:32:21 2025
+--Date        : Thu Dec 18 21:04:47 2025
 --Host        : murtyms-Z270X-Gaming-7 running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -41,12 +41,13 @@ entity design_1 is
     csn : in STD_LOGIC;
     ext_reset_in_0 : in STD_LOGIC;
     fpga_led : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    gpio_io_o_0 : out STD_LOGIC_VECTOR ( 6 downto 0 );
     oen : in STD_LOGIC;
     read_data_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
     wen : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -276,25 +277,25 @@ architecture STRUCTURE of design_1 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_rready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_awaddr : out STD_LOGIC_VECTOR ( 94 downto 0 );
-    m_axi_awprot : out STD_LOGIC_VECTOR ( 14 downto 0 );
-    m_axi_awvalid : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_awready : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_wdata : out STD_LOGIC_VECTOR ( 159 downto 0 );
-    m_axi_wstrb : out STD_LOGIC_VECTOR ( 19 downto 0 );
-    m_axi_wvalid : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_wready : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_bresp : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    m_axi_bvalid : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_bready : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_araddr : out STD_LOGIC_VECTOR ( 94 downto 0 );
-    m_axi_arprot : out STD_LOGIC_VECTOR ( 14 downto 0 );
-    m_axi_arvalid : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_arready : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_rdata : in STD_LOGIC_VECTOR ( 159 downto 0 );
-    m_axi_rresp : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    m_axi_rvalid : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    m_axi_rready : out STD_LOGIC_VECTOR ( 4 downto 0 )
+    m_axi_awaddr : out STD_LOGIC_VECTOR ( 113 downto 0 );
+    m_axi_awprot : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m_axi_awvalid : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_awready : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_wdata : out STD_LOGIC_VECTOR ( 191 downto 0 );
+    m_axi_wstrb : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axi_wvalid : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_wready : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_bresp : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    m_axi_bvalid : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_bready : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_araddr : out STD_LOGIC_VECTOR ( 113 downto 0 );
+    m_axi_arprot : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m_axi_arvalid : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_arready : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_rdata : in STD_LOGIC_VECTOR ( 191 downto 0 );
+    m_axi_rresp : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    m_axi_rvalid : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    m_axi_rready : out STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   end component design_1_axi_crossbar_0_0;
   component design_1_Blinky_0_0 is
@@ -304,6 +305,30 @@ architecture STRUCTURE of design_1 is
     led : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component design_1_Blinky_0_0;
+  component design_1_axi_gpio_0_0 is
+  port (
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC;
+    gpio_io_o : out STD_LOGIC_VECTOR ( 6 downto 0 )
+  );
+  end component design_1_axi_gpio_0_0;
   signal axi_crossbar_0_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 18 downto 0 );
   signal axi_crossbar_0_M00_AXI_ARPROT : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal axi_crossbar_0_M00_AXI_ARREADY : STD_LOGIC;
@@ -399,6 +424,23 @@ architecture STRUCTURE of design_1 is
   signal axi_crossbar_0_M04_AXI_WREADY : STD_LOGIC;
   signal axi_crossbar_0_M04_AXI_WSTRB : STD_LOGIC_VECTOR ( 19 downto 16 );
   signal axi_crossbar_0_M04_AXI_WVALID : STD_LOGIC_VECTOR ( 4 to 4 );
+  signal axi_crossbar_0_M05_AXI_ARADDR : STD_LOGIC_VECTOR ( 113 downto 95 );
+  signal axi_crossbar_0_M05_AXI_ARREADY : STD_LOGIC;
+  signal axi_crossbar_0_M05_AXI_ARVALID : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal axi_crossbar_0_M05_AXI_AWADDR : STD_LOGIC_VECTOR ( 113 downto 95 );
+  signal axi_crossbar_0_M05_AXI_AWREADY : STD_LOGIC;
+  signal axi_crossbar_0_M05_AXI_AWVALID : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal axi_crossbar_0_M05_AXI_BREADY : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal axi_crossbar_0_M05_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_crossbar_0_M05_AXI_BVALID : STD_LOGIC;
+  signal axi_crossbar_0_M05_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_crossbar_0_M05_AXI_RREADY : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal axi_crossbar_0_M05_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_crossbar_0_M05_AXI_RVALID : STD_LOGIC;
+  signal axi_crossbar_0_M05_AXI_WDATA : STD_LOGIC_VECTOR ( 191 downto 160 );
+  signal axi_crossbar_0_M05_AXI_WREADY : STD_LOGIC;
+  signal axi_crossbar_0_M05_AXI_WSTRB : STD_LOGIC_VECTOR ( 23 downto 20 );
+  signal axi_crossbar_0_M05_AXI_WVALID : STD_LOGIC_VECTOR ( 5 to 5 );
   signal clk_wiz_0_clk_out2 : STD_LOGIC;
   signal clk_wiz_0_locked : STD_LOGIC;
   signal gpmc_axi_bridge_1_m_axi_lite_ARADDR : STD_LOGIC_VECTOR ( 18 downto 0 );
@@ -418,6 +460,8 @@ architecture STRUCTURE of design_1 is
   signal gpmc_axi_bridge_1_m_axi_lite_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
   signal gpmc_axi_bridge_1_m_axi_lite_WVALID : STD_LOGIC;
   signal proc_sys_reset_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_axi_crossbar_0_m_axi_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 15 );
+  signal NLW_axi_crossbar_0_m_axi_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 15 );
   signal NLW_clk_wiz_0_clk_out1_UNCONNECTED : STD_LOGIC;
   signal NLW_clk_wiz_0_clk_out3_UNCONNECTED : STD_LOGIC;
   signal NLW_clk_wiz_0_clk_out4_UNCONNECTED : STD_LOGIC;
@@ -584,96 +628,115 @@ axi_crossbar_0: component design_1_axi_crossbar_0_0
      port map (
       aclk => clk_wiz_0_clk_out2,
       aresetn => proc_sys_reset_0_peripheral_aresetn(0),
+      m_axi_araddr(113 downto 95) => axi_crossbar_0_M05_AXI_ARADDR(113 downto 95),
       m_axi_araddr(94 downto 76) => axi_crossbar_0_M04_AXI_ARADDR(94 downto 76),
       m_axi_araddr(75 downto 57) => axi_crossbar_0_M03_AXI_ARADDR(75 downto 57),
       m_axi_araddr(56 downto 38) => axi_crossbar_0_M02_AXI_ARADDR(56 downto 38),
       m_axi_araddr(37 downto 19) => axi_crossbar_0_M01_AXI_ARADDR(37 downto 19),
       m_axi_araddr(18 downto 0) => axi_crossbar_0_M00_AXI_ARADDR(18 downto 0),
+      m_axi_arprot(17 downto 15) => NLW_axi_crossbar_0_m_axi_arprot_UNCONNECTED(17 downto 15),
       m_axi_arprot(14 downto 12) => axi_crossbar_0_M04_AXI_ARPROT(14 downto 12),
       m_axi_arprot(11 downto 9) => axi_crossbar_0_M03_AXI_ARPROT(11 downto 9),
       m_axi_arprot(8 downto 6) => axi_crossbar_0_M02_AXI_ARPROT(8 downto 6),
       m_axi_arprot(5 downto 3) => axi_crossbar_0_M01_AXI_ARPROT(5 downto 3),
       m_axi_arprot(2 downto 0) => axi_crossbar_0_M00_AXI_ARPROT(2 downto 0),
+      m_axi_arready(5) => axi_crossbar_0_M05_AXI_ARREADY,
       m_axi_arready(4) => axi_crossbar_0_M04_AXI_ARREADY,
       m_axi_arready(3) => axi_crossbar_0_M03_AXI_ARREADY,
       m_axi_arready(2) => axi_crossbar_0_M02_AXI_ARREADY,
       m_axi_arready(1) => axi_crossbar_0_M01_AXI_ARREADY,
       m_axi_arready(0) => axi_crossbar_0_M00_AXI_ARREADY,
+      m_axi_arvalid(5) => axi_crossbar_0_M05_AXI_ARVALID(5),
       m_axi_arvalid(4) => axi_crossbar_0_M04_AXI_ARVALID(4),
       m_axi_arvalid(3) => axi_crossbar_0_M03_AXI_ARVALID(3),
       m_axi_arvalid(2) => axi_crossbar_0_M02_AXI_ARVALID(2),
       m_axi_arvalid(1) => axi_crossbar_0_M01_AXI_ARVALID(1),
       m_axi_arvalid(0) => axi_crossbar_0_M00_AXI_ARVALID(0),
+      m_axi_awaddr(113 downto 95) => axi_crossbar_0_M05_AXI_AWADDR(113 downto 95),
       m_axi_awaddr(94 downto 76) => axi_crossbar_0_M04_AXI_AWADDR(94 downto 76),
       m_axi_awaddr(75 downto 57) => axi_crossbar_0_M03_AXI_AWADDR(75 downto 57),
       m_axi_awaddr(56 downto 38) => axi_crossbar_0_M02_AXI_AWADDR(56 downto 38),
       m_axi_awaddr(37 downto 19) => axi_crossbar_0_M01_AXI_AWADDR(37 downto 19),
       m_axi_awaddr(18 downto 0) => axi_crossbar_0_M00_AXI_AWADDR(18 downto 0),
+      m_axi_awprot(17 downto 15) => NLW_axi_crossbar_0_m_axi_awprot_UNCONNECTED(17 downto 15),
       m_axi_awprot(14 downto 12) => axi_crossbar_0_M04_AXI_AWPROT(14 downto 12),
       m_axi_awprot(11 downto 9) => axi_crossbar_0_M03_AXI_AWPROT(11 downto 9),
       m_axi_awprot(8 downto 6) => axi_crossbar_0_M02_AXI_AWPROT(8 downto 6),
       m_axi_awprot(5 downto 3) => axi_crossbar_0_M01_AXI_AWPROT(5 downto 3),
       m_axi_awprot(2 downto 0) => axi_crossbar_0_M00_AXI_AWPROT(2 downto 0),
+      m_axi_awready(5) => axi_crossbar_0_M05_AXI_AWREADY,
       m_axi_awready(4) => axi_crossbar_0_M04_AXI_AWREADY,
       m_axi_awready(3) => axi_crossbar_0_M03_AXI_AWREADY,
       m_axi_awready(2) => axi_crossbar_0_M02_AXI_AWREADY,
       m_axi_awready(1) => axi_crossbar_0_M01_AXI_AWREADY,
       m_axi_awready(0) => axi_crossbar_0_M00_AXI_AWREADY,
+      m_axi_awvalid(5) => axi_crossbar_0_M05_AXI_AWVALID(5),
       m_axi_awvalid(4) => axi_crossbar_0_M04_AXI_AWVALID(4),
       m_axi_awvalid(3) => axi_crossbar_0_M03_AXI_AWVALID(3),
       m_axi_awvalid(2) => axi_crossbar_0_M02_AXI_AWVALID(2),
       m_axi_awvalid(1) => axi_crossbar_0_M01_AXI_AWVALID(1),
       m_axi_awvalid(0) => axi_crossbar_0_M00_AXI_AWVALID(0),
+      m_axi_bready(5) => axi_crossbar_0_M05_AXI_BREADY(5),
       m_axi_bready(4) => axi_crossbar_0_M04_AXI_BREADY(4),
       m_axi_bready(3) => axi_crossbar_0_M03_AXI_BREADY(3),
       m_axi_bready(2) => axi_crossbar_0_M02_AXI_BREADY(2),
       m_axi_bready(1) => axi_crossbar_0_M01_AXI_BREADY(1),
       m_axi_bready(0) => axi_crossbar_0_M00_AXI_BREADY(0),
+      m_axi_bresp(11 downto 10) => axi_crossbar_0_M05_AXI_BRESP(1 downto 0),
       m_axi_bresp(9 downto 8) => axi_crossbar_0_M04_AXI_BRESP(1 downto 0),
       m_axi_bresp(7 downto 6) => axi_crossbar_0_M03_AXI_BRESP(1 downto 0),
       m_axi_bresp(5 downto 4) => axi_crossbar_0_M02_AXI_BRESP(1 downto 0),
       m_axi_bresp(3 downto 2) => axi_crossbar_0_M01_AXI_BRESP(1 downto 0),
       m_axi_bresp(1 downto 0) => axi_crossbar_0_M00_AXI_BRESP(1 downto 0),
+      m_axi_bvalid(5) => axi_crossbar_0_M05_AXI_BVALID,
       m_axi_bvalid(4) => axi_crossbar_0_M04_AXI_BVALID,
       m_axi_bvalid(3) => axi_crossbar_0_M03_AXI_BVALID,
       m_axi_bvalid(2) => axi_crossbar_0_M02_AXI_BVALID,
       m_axi_bvalid(1) => axi_crossbar_0_M01_AXI_BVALID,
       m_axi_bvalid(0) => axi_crossbar_0_M00_AXI_BVALID,
+      m_axi_rdata(191 downto 160) => axi_crossbar_0_M05_AXI_RDATA(31 downto 0),
       m_axi_rdata(159 downto 128) => axi_crossbar_0_M04_AXI_RDATA(31 downto 0),
       m_axi_rdata(127 downto 96) => axi_crossbar_0_M03_AXI_RDATA(31 downto 0),
       m_axi_rdata(95 downto 64) => axi_crossbar_0_M02_AXI_RDATA(31 downto 0),
       m_axi_rdata(63 downto 32) => axi_crossbar_0_M01_AXI_RDATA(31 downto 0),
       m_axi_rdata(31 downto 0) => axi_crossbar_0_M00_AXI_RDATA(31 downto 0),
+      m_axi_rready(5) => axi_crossbar_0_M05_AXI_RREADY(5),
       m_axi_rready(4) => axi_crossbar_0_M04_AXI_RREADY(4),
       m_axi_rready(3) => axi_crossbar_0_M03_AXI_RREADY(3),
       m_axi_rready(2) => axi_crossbar_0_M02_AXI_RREADY(2),
       m_axi_rready(1) => axi_crossbar_0_M01_AXI_RREADY(1),
       m_axi_rready(0) => axi_crossbar_0_M00_AXI_RREADY(0),
+      m_axi_rresp(11 downto 10) => axi_crossbar_0_M05_AXI_RRESP(1 downto 0),
       m_axi_rresp(9 downto 8) => axi_crossbar_0_M04_AXI_RRESP(1 downto 0),
       m_axi_rresp(7 downto 6) => axi_crossbar_0_M03_AXI_RRESP(1 downto 0),
       m_axi_rresp(5 downto 4) => axi_crossbar_0_M02_AXI_RRESP(1 downto 0),
       m_axi_rresp(3 downto 2) => axi_crossbar_0_M01_AXI_RRESP(1 downto 0),
       m_axi_rresp(1 downto 0) => axi_crossbar_0_M00_AXI_RRESP(1 downto 0),
+      m_axi_rvalid(5) => axi_crossbar_0_M05_AXI_RVALID,
       m_axi_rvalid(4) => axi_crossbar_0_M04_AXI_RVALID,
       m_axi_rvalid(3) => axi_crossbar_0_M03_AXI_RVALID,
       m_axi_rvalid(2) => axi_crossbar_0_M02_AXI_RVALID,
       m_axi_rvalid(1) => axi_crossbar_0_M01_AXI_RVALID,
       m_axi_rvalid(0) => axi_crossbar_0_M00_AXI_RVALID,
+      m_axi_wdata(191 downto 160) => axi_crossbar_0_M05_AXI_WDATA(191 downto 160),
       m_axi_wdata(159 downto 128) => axi_crossbar_0_M04_AXI_WDATA(159 downto 128),
       m_axi_wdata(127 downto 96) => axi_crossbar_0_M03_AXI_WDATA(127 downto 96),
       m_axi_wdata(95 downto 64) => axi_crossbar_0_M02_AXI_WDATA(95 downto 64),
       m_axi_wdata(63 downto 32) => axi_crossbar_0_M01_AXI_WDATA(63 downto 32),
       m_axi_wdata(31 downto 0) => axi_crossbar_0_M00_AXI_WDATA(31 downto 0),
+      m_axi_wready(5) => axi_crossbar_0_M05_AXI_WREADY,
       m_axi_wready(4) => axi_crossbar_0_M04_AXI_WREADY,
       m_axi_wready(3) => axi_crossbar_0_M03_AXI_WREADY,
       m_axi_wready(2) => axi_crossbar_0_M02_AXI_WREADY,
       m_axi_wready(1) => axi_crossbar_0_M01_AXI_WREADY,
       m_axi_wready(0) => axi_crossbar_0_M00_AXI_WREADY,
+      m_axi_wstrb(23 downto 20) => axi_crossbar_0_M05_AXI_WSTRB(23 downto 20),
       m_axi_wstrb(19 downto 16) => axi_crossbar_0_M04_AXI_WSTRB(19 downto 16),
       m_axi_wstrb(15 downto 12) => axi_crossbar_0_M03_AXI_WSTRB(15 downto 12),
       m_axi_wstrb(11 downto 8) => axi_crossbar_0_M02_AXI_WSTRB(11 downto 8),
       m_axi_wstrb(7 downto 4) => axi_crossbar_0_M01_AXI_WSTRB(7 downto 4),
       m_axi_wstrb(3 downto 0) => axi_crossbar_0_M00_AXI_WSTRB(3 downto 0),
+      m_axi_wvalid(5) => axi_crossbar_0_M05_AXI_WVALID(5),
       m_axi_wvalid(4) => axi_crossbar_0_M04_AXI_WVALID(4),
       m_axi_wvalid(3) => axi_crossbar_0_M03_AXI_WVALID(3),
       m_axi_wvalid(2) => axi_crossbar_0_M02_AXI_WVALID(2),
@@ -698,6 +761,29 @@ axi_crossbar_0: component design_1_axi_crossbar_0_0
       s_axi_wready(0) => gpmc_axi_bridge_1_m_axi_lite_WREADY(0),
       s_axi_wstrb(3 downto 0) => B"1111",
       s_axi_wvalid(0) => gpmc_axi_bridge_1_m_axi_lite_WVALID
+    );
+axi_gpio_0: component design_1_axi_gpio_0_0
+     port map (
+      gpio_io_o(6 downto 0) => gpio_io_o_0(6 downto 0),
+      s_axi_aclk => clk_wiz_0_clk_out2,
+      s_axi_araddr(8 downto 0) => axi_crossbar_0_M05_AXI_ARADDR(103 downto 95),
+      s_axi_aresetn => proc_sys_reset_0_peripheral_aresetn(0),
+      s_axi_arready => axi_crossbar_0_M05_AXI_ARREADY,
+      s_axi_arvalid => axi_crossbar_0_M05_AXI_ARVALID(5),
+      s_axi_awaddr(8 downto 0) => axi_crossbar_0_M05_AXI_AWADDR(103 downto 95),
+      s_axi_awready => axi_crossbar_0_M05_AXI_AWREADY,
+      s_axi_awvalid => axi_crossbar_0_M05_AXI_AWVALID(5),
+      s_axi_bready => axi_crossbar_0_M05_AXI_BREADY(5),
+      s_axi_bresp(1 downto 0) => axi_crossbar_0_M05_AXI_BRESP(1 downto 0),
+      s_axi_bvalid => axi_crossbar_0_M05_AXI_BVALID,
+      s_axi_rdata(31 downto 0) => axi_crossbar_0_M05_AXI_RDATA(31 downto 0),
+      s_axi_rready => axi_crossbar_0_M05_AXI_RREADY(5),
+      s_axi_rresp(1 downto 0) => axi_crossbar_0_M05_AXI_RRESP(1 downto 0),
+      s_axi_rvalid => axi_crossbar_0_M05_AXI_RVALID,
+      s_axi_wdata(31 downto 0) => axi_crossbar_0_M05_AXI_WDATA(191 downto 160),
+      s_axi_wready => axi_crossbar_0_M05_AXI_WREADY,
+      s_axi_wstrb(3 downto 0) => axi_crossbar_0_M05_AXI_WSTRB(23 downto 20),
+      s_axi_wvalid => axi_crossbar_0_M05_AXI_WVALID(5)
     );
 clk_wiz_0: component design_1_clk_wiz_0_0
      port map (

@@ -306,6 +306,7 @@ BEGIN
       SCLK_4            => SCAL_SPI_CLK_OUT4_2P5_IN,  
       clk_25MHZ         => CLK_25MHZ_FPGA,
       ext_reset_in_0    => AM3357_GPIO_3(17),
+      gpio_io_o_0 (6 downto 0) => FPGA_DEBUG_HEAD (6 downto 0),
       ----------------------
       --Debug LED
       ----------------------

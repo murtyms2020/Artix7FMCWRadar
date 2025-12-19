@@ -1,7 +1,17 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"3.07785",
-   "Default View_TopLeft":"1740,421",
+   "Addressing View_Layers":"/ext_reset_in_0_1:false|/proc_sys_reset_0_peripheral_aresetn:false|/CLK_25MHZ_FPGA_1:false|/clk_wiz_0_clk_out2:false|",
+   "Addressing View_ScaleFactor":"0.827642",
+   "Addressing View_TopLeft":"-190,2",
+   "Clocking and Reset View_Layers":"/CLK_25MHZ_FPGA_1:true|/clk_wiz_0_clk_out2:true|/ext_reset_in_0_1:true|/proc_sys_reset_0_peripheral_aresetn:true|",
+   "Clocking and Reset View_ScaleFactor":"0.664298",
+   "Clocking and Reset View_TopLeft":"-154,-14",
+   "Default View_ScaleFactor":"1.89464",
+   "Default View_TopLeft":"1002,409",
+   "Display-IntfAXI4Lite":"true",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
@@ -9,82 +19,86 @@ preplace port port-id_advn -pg 1 -lvl 0 -x -420 -y 10 -defaultsOSRD
 preplace port port-id_wen -pg 1 -lvl 0 -x -420 -y -130 -defaultsOSRD
 preplace port port-id_oen -pg 1 -lvl 0 -x -420 -y -50 -defaultsOSRD
 preplace port port-id_csn -pg 1 -lvl 0 -x -420 -y -110 -defaultsOSRD
-preplace port port-id_CSN_0 -pg 1 -lvl 7 -x 1870 -y 270 -defaultsOSRD
+preplace port port-id_CSN_0 -pg 1 -lvl 7 -x 2110 -y 270 -defaultsOSRD
 preplace port port-id_MISO_0 -pg 1 -lvl 0 -x -420 -y 240 -defaultsOSRD
-preplace port port-id_MOSI_0 -pg 1 -lvl 7 -x 1870 -y 230 -defaultsOSRD
-preplace port port-id_SCLK_0 -pg 1 -lvl 7 -x 1870 -y 250 -defaultsOSRD
+preplace port port-id_MOSI_0 -pg 1 -lvl 7 -x 2110 -y 230 -defaultsOSRD
+preplace port port-id_SCLK_0 -pg 1 -lvl 7 -x 2110 -y 250 -defaultsOSRD
 preplace port port-id_MISO_1 -pg 1 -lvl 0 -x -420 -y 380 -defaultsOSRD
-preplace port port-id_MOSI_1 -pg 1 -lvl 7 -x 1870 -y 370 -defaultsOSRD
-preplace port port-id_SCLK_1 -pg 1 -lvl 7 -x 1870 -y 390 -defaultsOSRD
-preplace port port-id_CSN_1 -pg 1 -lvl 7 -x 1870 -y 410 -defaultsOSRD
+preplace port port-id_MOSI_1 -pg 1 -lvl 7 -x 2110 -y 370 -defaultsOSRD
+preplace port port-id_SCLK_1 -pg 1 -lvl 7 -x 2110 -y 390 -defaultsOSRD
+preplace port port-id_CSN_1 -pg 1 -lvl 7 -x 2110 -y 410 -defaultsOSRD
 preplace port port-id_MISO_2 -pg 1 -lvl 0 -x -420 -y 510 -defaultsOSRD
-preplace port port-id_SCLK_2 -pg 1 -lvl 7 -x 1870 -y 480 -defaultsOSRD
-preplace port port-id_MOSI_2 -pg 1 -lvl 7 -x 1870 -y 500 -defaultsOSRD
-preplace port port-id_CSN_2 -pg 1 -lvl 7 -x 1870 -y 550 -defaultsOSRD
-preplace port port-id_SCLK_3 -pg 1 -lvl 7 -x 1870 -y 670 -defaultsOSRD
-preplace port port-id_MOSI_3 -pg 1 -lvl 7 -x 1870 -y 650 -defaultsOSRD
+preplace port port-id_SCLK_2 -pg 1 -lvl 7 -x 2110 -y 480 -defaultsOSRD
+preplace port port-id_MOSI_2 -pg 1 -lvl 7 -x 2110 -y 500 -defaultsOSRD
+preplace port port-id_CSN_2 -pg 1 -lvl 7 -x 2110 -y 550 -defaultsOSRD
+preplace port port-id_SCLK_3 -pg 1 -lvl 7 -x 2110 -y 670 -defaultsOSRD
+preplace port port-id_MOSI_3 -pg 1 -lvl 7 -x 2110 -y 650 -defaultsOSRD
 preplace port port-id_MISO_3 -pg 1 -lvl 0 -x -420 -y 660 -defaultsOSRD
-preplace port port-id_CSN_3 -pg 1 -lvl 7 -x 1870 -y 690 -defaultsOSRD
-preplace port port-id_SCLK_4 -pg 1 -lvl 7 -x 1870 -y 840 -defaultsOSRD
-preplace port port-id_MOSI_4 -pg 1 -lvl 7 -x 1870 -y 820 -defaultsOSRD
+preplace port port-id_CSN_3 -pg 1 -lvl 7 -x 2110 -y 690 -defaultsOSRD
+preplace port port-id_SCLK_4 -pg 1 -lvl 7 -x 2110 -y 840 -defaultsOSRD
+preplace port port-id_MOSI_4 -pg 1 -lvl 7 -x 2110 -y 820 -defaultsOSRD
 preplace port port-id_MISO_4 -pg 1 -lvl 0 -x -420 -y 830 -defaultsOSRD
-preplace port port-id_CSN_4 -pg 1 -lvl 7 -x 1870 -y 860 -defaultsOSRD
+preplace port port-id_CSN_4 -pg 1 -lvl 7 -x 2110 -y 860 -defaultsOSRD
 preplace port port-id_clk_25MHZ -pg 1 -lvl 0 -x -420 -y 280 -defaultsOSRD
 preplace port port-id_ext_reset_in_0 -pg 1 -lvl 0 -x -420 -y 120 -defaultsOSRD
 preplace portBus a_d -pg 1 -lvl 0 -x -420 -y -20 -defaultsOSRD
 preplace portBus a -pg 1 -lvl 0 -x -420 -y 40 -defaultsOSRD
-preplace portBus read_data_out -pg 1 -lvl 7 -x 1870 -y -20 -defaultsOSRD
-preplace portBus fpga_led -pg 1 -lvl 7 -x 1870 -y 530 -defaultsOSRD
-preplace inst gpmc_axi_bridge_1 -pg 1 -lvl 4 -x 710 -y -10 -defaultsOSRD
-preplace inst ad9361_spi_generic_0 -pg 1 -lvl 6 -x 1700 -y 190 -defaultsOSRD
-preplace inst ad9361_spi_generic_1 -pg 1 -lvl 6 -x 1700 -y 350 -defaultsOSRD
-preplace inst ad9361_spi_generic_2 -pg 1 -lvl 6 -x 1700 -y 510 -defaultsOSRD
-preplace inst ad9361_spi_generic_3 -pg 1 -lvl 6 -x 1700 -y 670 -defaultsOSRD
-preplace inst ad9361_spi_generic_4 -pg 1 -lvl 6 -x 1700 -y 840 -defaultsOSRD
+preplace portBus read_data_out -pg 1 -lvl 7 -x 2110 -y -20 -defaultsOSRD
+preplace portBus fpga_led -pg 1 -lvl 7 -x 2110 -y 530 -defaultsOSRD
+preplace portBus gpio_io_o_0 -pg 1 -lvl 7 -x 2110 -y 1050 -defaultsOSRD
+preplace inst gpmc_axi_bridge_1 -pg 1 -lvl 4 -x 720 -y -10 -defaultsOSRD
+preplace inst ad9361_spi_generic_0 -pg 1 -lvl 6 -x 1930 -y 190 -defaultsOSRD
+preplace inst ad9361_spi_generic_1 -pg 1 -lvl 6 -x 1930 -y 350 -defaultsOSRD
+preplace inst ad9361_spi_generic_2 -pg 1 -lvl 6 -x 1930 -y 510 -defaultsOSRD
+preplace inst ad9361_spi_generic_3 -pg 1 -lvl 6 -x 1930 -y 670 -defaultsOSRD
+preplace inst ad9361_spi_generic_4 -pg 1 -lvl 6 -x 1930 -y 840 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 100 -y 270 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x -200 -y 140 -defaultsOSRD
 preplace inst axi_crossbar_0 -pg 1 -lvl 5 -x 1340 -y 560 -defaultsOSRD
-preplace inst Blinky_0 -pg 1 -lvl 3 -x 340 -y 530 -defaultsOSRD
-preplace netloc MISO_0_1 1 0 6 NJ 240 0 170 N 170 500 180 NJ 180 NJ
-preplace netloc MISO_1_1 1 0 6 NJ 380 N 380 N 380 450 340 NJ 340 NJ
-preplace netloc MISO_2_1 1 0 6 NJ 510 N 510 220 460 N 460 NJ 460 1570J
-preplace netloc MISO_3_1 1 0 6 NJ 660 N 660 N 660 N 660 NJ 660 NJ
+preplace inst Blinky_0 -pg 1 -lvl 3 -x 350 -y 530 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 1930 -y 1040 -defaultsOSRD
+preplace netloc Blinky_0_led 1 3 4 NJ 530 910J 680 1480J 930 2090J
+preplace netloc CLK_25MHZ_FPGA_1 1 0 2 N 280 NJ
+preplace netloc MISO_0_1 1 0 6 NJ 240 0 170 N 170 530 180 NJ 180 NJ
+preplace netloc MISO_1_1 1 0 6 NJ 380 N 380 220 340 N 340 NJ 340 NJ
+preplace netloc MISO_2_1 1 0 6 NJ 510 N 510 240 460 460 450 NJ 450 1790J
+preplace netloc MISO_3_1 1 0 6 NJ 660 N 660 N 660 530 670 NJ 670 1790J
 preplace netloc MISO_4_1 1 0 6 NJ 830 N 830 N 830 N 830 NJ 830 NJ
-preplace netloc a_0_1 1 0 4 NJ 40 -20 60 N 60 N
-preplace netloc a_d_0_1 1 0 4 N -20 N -20 N -20 450
-preplace netloc ad9361_spi_generic_0_CSN 1 6 1 1830J 210n
-preplace netloc ad9361_spi_generic_0_MOSI 1 6 1 1850J 170n
-preplace netloc ad9361_spi_generic_0_SCLK 1 6 1 1840J 190n
-preplace netloc ad9361_spi_generic_1_CSN 1 6 1 1830 370n
-preplace netloc ad9361_spi_generic_1_MOSI 1 6 1 1850 330n
-preplace netloc ad9361_spi_generic_1_SCLK 1 6 1 1840 350n
-preplace netloc ad9361_spi_generic_2_CSN 1 6 1 1830J 530n
-preplace netloc ad9361_spi_generic_2_MOSI 1 6 1 1830J 490n
-preplace netloc ad9361_spi_generic_2_SCLK 1 6 1 1850J 480n
+preplace netloc a_0_1 1 0 4 NJ 40 N 40 N 40 460
+preplace netloc a_d_0_1 1 0 4 N -20 N -20 N -20 490
+preplace netloc ad9361_spi_generic_0_CSN 1 6 1 2070J 210n
+preplace netloc ad9361_spi_generic_0_MOSI 1 6 1 2090J 170n
+preplace netloc ad9361_spi_generic_0_SCLK 1 6 1 2080J 190n
+preplace netloc ad9361_spi_generic_1_CSN 1 6 1 2070 370n
+preplace netloc ad9361_spi_generic_1_MOSI 1 6 1 2090 330n
+preplace netloc ad9361_spi_generic_1_SCLK 1 6 1 2080 350n
+preplace netloc ad9361_spi_generic_2_CSN 1 6 1 2070J 530n
+preplace netloc ad9361_spi_generic_2_MOSI 1 6 1 2070J 490n
+preplace netloc ad9361_spi_generic_2_SCLK 1 6 1 2090J 480n
 preplace netloc ad9361_spi_generic_3_CSN 1 6 1 NJ 690
 preplace netloc ad9361_spi_generic_3_MOSI 1 6 1 NJ 650
 preplace netloc ad9361_spi_generic_3_SCLK 1 6 1 NJ 670
 preplace netloc ad9361_spi_generic_4_CSN 1 6 1 NJ 860
 preplace netloc ad9361_spi_generic_4_MOSI 1 6 1 NJ 820
 preplace netloc ad9361_spi_generic_4_SCLK 1 6 1 NJ 840
-preplace netloc advn_0_1 1 0 4 NJ 10 0 40 N 40 N
-preplace netloc clk_wiz_0_clk_out2 1 0 6 -380 250 -10 150 230 150 480 150 1190 200 1550
+preplace netloc advn_0_1 1 0 4 NJ 10 N 10 N 10 470
+preplace netloc clk_wiz_0_clk_out2 1 0 6 -380 250 -10 150 230 150 480 150 1190 200 1770
 preplace netloc clk_wiz_0_locked 1 0 3 -390 370 NJ 370 200
-preplace netloc csn_0_1 1 0 4 NJ -110 N -110 N -110 510
+preplace netloc csn_0_1 1 0 4 NJ -110 N -110 N -110 520
 preplace netloc ext_reset_in_0_1 1 0 2 -400 260 N
-preplace netloc oen_0_1 1 0 4 NJ -50 N -50 N -50 490
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 -20 160 210J 160 500 160 1180 220 1530
-preplace netloc wen_0_1 1 0 4 NJ -130 N -130 N -130 520
-preplace netloc CLK_25MHZ_FPGA_1 1 0 2 N 280 NJ
 preplace netloc gpmc_axi_bridge_1_read_data_out 1 4 3 NJ -20 NJ -20 NJ
-preplace netloc Blinky_0_led 1 3 4 NJ 530 900J 820 1480J 930 1850J
+preplace netloc oen_0_1 1 0 4 NJ -50 N -50 N -50 510
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 -20 160 210J 160 500 160 1180 220 1750
+preplace netloc wen_0_1 1 0 4 NJ -130 N -130 N -130 530
+preplace netloc axi_gpio_0_gpio_io_o 1 6 1 N 1050
 preplace netloc axi_crossbar_0_M00_AXI 1 5 1 1490 160n
-preplace netloc axi_crossbar_0_M01_AXI 1 5 1 1480 320n
-preplace netloc axi_crossbar_0_M02_AXI 1 5 1 1560 480n
-preplace netloc axi_crossbar_0_M03_AXI 1 5 1 1540 580n
-preplace netloc axi_crossbar_0_M04_AXI 1 5 1 1490 600n
+preplace netloc axi_crossbar_0_M01_AXI 1 5 1 1760 320n
+preplace netloc axi_crossbar_0_M02_AXI 1 5 1 1780 480n
+preplace netloc axi_crossbar_0_M03_AXI 1 5 1 1790 570n
+preplace netloc axi_crossbar_0_M04_AXI 1 5 1 1760 590n
 preplace netloc gpmc_axi_bridge_1_m_axi_lite 1 4 1 1200 -40n
-levelinfo -pg 1 -420 -200 100 340 710 1340 1700 1870
+preplace netloc axi_crossbar_0_M05_AXI 1 5 1 1490 610n
+levelinfo -pg 1 -420 -200 100 350 720 1340 1930 2110
 pagesize -pg 1 -db -bbox -sgen -600 -400 2580 1440
 "
 }

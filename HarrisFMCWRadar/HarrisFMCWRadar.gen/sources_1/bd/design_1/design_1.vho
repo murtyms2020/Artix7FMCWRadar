@@ -82,7 +82,8 @@ COMPONENT design_1
     clk_25MHZ : IN STD_LOGIC;
     ext_reset_in_0 : IN STD_LOGIC;
     read_data_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-    fpga_led : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+    fpga_led : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    gpio_io_o_0 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -122,7 +123,8 @@ your_instance_name : design_1
     clk_25MHZ => clk_25MHZ,
     ext_reset_in_0 => ext_reset_in_0,
     read_data_out => read_data_out,
-    fpga_led => fpga_led
+    fpga_led => fpga_led,
+    gpio_io_o_0 => gpio_io_o_0
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

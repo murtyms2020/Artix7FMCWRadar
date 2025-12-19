@@ -10,6 +10,9 @@ vlib modelsim_lib/msim/axi_register_slice_v2_1_36
 vlib modelsim_lib/msim/fifo_generator_v13_2_14
 vlib modelsim_lib/msim/axi_data_fifo_v2_1_36
 vlib modelsim_lib/msim/axi_crossbar_v2_1_38
+vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
+vlib modelsim_lib/msim/interrupt_control_v3_1_5
+vlib modelsim_lib/msim/axi_gpio_v2_0_37
 
 vmap xpm modelsim_lib/msim/xpm
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
@@ -20,6 +23,9 @@ vmap axi_register_slice_v2_1_36 modelsim_lib/msim/axi_register_slice_v2_1_36
 vmap fifo_generator_v13_2_14 modelsim_lib/msim/fifo_generator_v13_2_14
 vmap axi_data_fifo_v2_1_36 modelsim_lib/msim/axi_data_fifo_v2_1_36
 vmap axi_crossbar_v2_1_38 modelsim_lib/msim/axi_crossbar_v2_1_38
+vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
+vmap interrupt_control_v3_1_5 modelsim_lib/msim/interrupt_control_v3_1_5
+vmap axi_gpio_v2_0_37 modelsim_lib/msim/axi_gpio_v2_0_37
 
 vlog -work xpm -64 -incr -mfcu  -sv "+incdir+../../../../HarrisFMCWRadar.gen/sources_1/bd/design_1/ipshared/a415" "+incdir+../../../../HarrisFMCWRadar.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../../../Vivado/2025.2/data/rsb/busdef" \
 "/home/murtyms/Vivado/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -74,8 +80,20 @@ vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../HarrisFMCWRadar.
 "../../../bd/design_1/ip/design_1_axi_crossbar_0_0/sim/design_1_axi_crossbar_0_0.v" \
 
 vcom -work xil_defaultlib -64 -93  \
-"../../../bd/design_1/sim/design_1.vhd" \
 "../../../bd/design_1/ip/design_1_Blinky_0_0/sim/design_1_Blinky_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+vcom -work axi_lite_ipif_v3_0_4 -64 -93  \
+"../../../../HarrisFMCWRadar.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work interrupt_control_v3_1_5 -64 -93  \
+"../../../../HarrisFMCWRadar.gen/sources_1/bd/design_1/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vcom -work axi_gpio_v2_0_37 -64 -93  \
+"../../../../HarrisFMCWRadar.gen/sources_1/bd/design_1/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

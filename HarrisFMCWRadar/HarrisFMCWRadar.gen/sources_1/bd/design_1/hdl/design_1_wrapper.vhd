@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Sun Dec 14 21:32:21 2025
+--Date        : Thu Dec 18 21:04:47 2025
 --Host        : murtyms-Z270X-Gaming-7 running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -41,6 +41,7 @@ entity design_1_wrapper is
     csn : in STD_LOGIC;
     ext_reset_in_0 : in STD_LOGIC;
     fpga_led : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    gpio_io_o_0 : out STD_LOGIC_VECTOR ( 6 downto 0 );
     oen : in STD_LOGIC;
     read_data_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
     wen : in STD_LOGIC
@@ -79,7 +80,8 @@ architecture STRUCTURE of design_1_wrapper is
     clk_25MHZ : in STD_LOGIC;
     ext_reset_in_0 : in STD_LOGIC;
     read_data_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    fpga_led : out STD_LOGIC_VECTOR ( 1 downto 0 )
+    fpga_led : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    gpio_io_o_0 : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   end component design_1;
 begin
@@ -112,6 +114,7 @@ design_1_i: component design_1
       csn => csn,
       ext_reset_in_0 => ext_reset_in_0,
       fpga_led(1 downto 0) => fpga_led(1 downto 0),
+      gpio_io_o_0(6 downto 0) => gpio_io_o_0(6 downto 0),
       oen => oen,
       read_data_out(15 downto 0) => read_data_out(15 downto 0),
       wen => wen

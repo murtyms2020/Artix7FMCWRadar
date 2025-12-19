@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tffg1156-1" LaunchTime="1765766102">
+<GenRun Id="impl_1" LaunchPart="xc7a200tffg1156-1" LaunchTime="1766109888">
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="HARRIS_RADAR_TOP_postroute_physopted.rqs"/>
@@ -51,12 +51,12 @@
   <File Type="BG-BIT" Name="HARRIS_RADAR_TOP.bit"/>
   <File Type="NOC_SOLUTION_FILE" Name="HARRIS_RADAR_TOP.ncr"/>
   <File Type="NOC_TRAFFIC_SPEC_FILE" Name="HARRIS_RADAR_TOP.nts"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="gpmc_axi_bridge_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="gpmc_axi_bridge_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="gpmc_axi_bridge_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="gpmc_axi_bridge_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="gpmc_axi_bridge_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="gpmc_axi_bridge_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="HARRIS_RADAR_TOP_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="HARRIS_RADAR_TOP_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="HARRIS_RADAR_TOP_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HARRIS_RADAR_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HARRIS_RADAR_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HARRIS_RADAR_TOP_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="HARRIS_RADAR_TOP_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="HARRIS_RADAR_TOP_postroute_physopt.dcp"/>
   <File Type="ROUTE-RQS-PB" Name="HARRIS_RADAR_TOP_rqs_routed.pb"/>
@@ -445,9 +445,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -456,10 +454,13 @@
     <Step Id="phys_opt_design"/>
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
-    <Step Id="write_bitstream"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_Blinky_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_3_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_1_0"/>

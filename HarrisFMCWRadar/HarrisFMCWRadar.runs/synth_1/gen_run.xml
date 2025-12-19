@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tffg1156-1" LaunchTime="1765766102" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/HARRIS_RADAR_TOP.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a200tffg1156-1" LaunchTime="1766109888" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/HARRIS_RADAR_TOP.dcp">
   <File Type="VDS-TIMING-PB" Name="HARRIS_RADAR_TOP_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="HARRIS_RADAR_TOP_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="HARRIS_RADAR_TOP.dcp"/>
@@ -341,13 +341,12 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_Blinky_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_3_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ad9361_spi_generic_1_0"/>

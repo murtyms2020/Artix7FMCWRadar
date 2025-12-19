@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sun Dec 14 21:35:05 2025
-# Process ID         : 73407
+# Start of session at: Thu Dec 18 21:05:39 2025
+# Process ID         : 13605
 # Current directory  : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1
 # Command line       : vivado -log HARRIS_RADAR_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HARRIS_RADAR_TOP.tcl
 # Log file           : /home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/HARRIS_RADAR_TOP.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
-# CPU Frequency      : 3697.316 MHz
+# CPU Frequency      : 3689.345 MHz
 # CPU Physical cores : 4
 # CPU Logical cores  : 4
 # Host memory        : 16476 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 18624 MB
-# Available Virtual  : 9352 MB
+# Available Virtual  : 12026 MB
 #-----------------------------------------------------------
 source HARRIS_RADAR_TOP.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -37,52 +37,54 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 73452
+INFO: [Synth 8-7075] Helper process launched with PID 13680
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2290.883 ; gain = 484.156 ; free physical = 489 ; free virtual = 7834
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2291.914 ; gain = 483.156 ; free physical = 2364 ; free virtual = 10052
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'HARRIS_RADAR_TOP' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:273]
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
-INFO: [Synth 8-3491] module 'design_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'design_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:54]
-INFO: [Synth 8-3491] module 'design_1_Blinky_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_Blinky_0_0_stub.vhdl:6' bound to instance 'Blinky_0' of component 'design_1_Blinky_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:437]
-INFO: [Synth 8-638] synthesizing module 'design_1_Blinky_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_Blinky_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_0' of component 'design_1_ad9361_spi_generic_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:443]
-INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_0_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_0_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_1_stub.vhdl:6' bound to instance 'ad9361_spi_generic_1' of component 'design_1_ad9361_spi_generic_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:471]
-INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_1_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_1_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_1_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_2' of component 'design_1_ad9361_spi_generic_1_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:499]
-INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_1_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_1_0_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_2_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_2_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_3' of component 'design_1_ad9361_spi_generic_2_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:527]
-INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_2_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_2_0_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_3_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_3_1_stub.vhdl:6' bound to instance 'ad9361_spi_generic_4' of component 'design_1_ad9361_spi_generic_3_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:555]
-INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_3_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_3_1_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'design_1_axi_crossbar_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_axi_crossbar_0_0_stub.vhdl:6' bound to instance 'axi_crossbar_0' of component 'design_1_axi_crossbar_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:583]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_crossbar_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_axi_crossbar_0_0_stub.vhdl:58]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:702]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_clk_wiz_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_gpmc_axi_bridge_0_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_gpmc_axi_bridge_0_1_stub.vhdl:6' bound to instance 'gpmc_axi_bridge_1' of component 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:712]
-INFO: [Synth 8-638] synthesizing module 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_gpmc_axi_bridge_0_1_stub.vhdl:47]
-INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'design_1_proc_sys_reset_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:742]
-INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-73407-murtyms-Z270X-Gaming-7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:28]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
-INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:331]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:51]
+INFO: [Synth 8-3491] module 'design_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:55]
+INFO: [Synth 8-3491] module 'design_1_Blinky_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_Blinky_0_0_stub.vhdl:6' bound to instance 'Blinky_0' of component 'design_1_Blinky_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:481]
+INFO: [Synth 8-638] synthesizing module 'design_1_Blinky_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_Blinky_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_0' of component 'design_1_ad9361_spi_generic_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:487]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_0_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_1_stub.vhdl:6' bound to instance 'ad9361_spi_generic_1' of component 'design_1_ad9361_spi_generic_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:515]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_0_1_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_1_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_1_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_2' of component 'design_1_ad9361_spi_generic_1_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:543]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_1_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_1_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_2_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_2_0_stub.vhdl:6' bound to instance 'ad9361_spi_generic_3' of component 'design_1_ad9361_spi_generic_2_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:571]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_2_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_2_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_ad9361_spi_generic_3_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_3_1_stub.vhdl:6' bound to instance 'ad9361_spi_generic_4' of component 'design_1_ad9361_spi_generic_3_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:599]
+INFO: [Synth 8-638] synthesizing module 'design_1_ad9361_spi_generic_3_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_ad9361_spi_generic_3_1_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'design_1_axi_crossbar_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_axi_crossbar_0_0_stub.vhdl:6' bound to instance 'axi_crossbar_0' of component 'design_1_axi_crossbar_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:627]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_crossbar_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_axi_crossbar_0_0_stub.vhdl:58]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:765]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_axi_gpio_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:788]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_clk_wiz_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_gpmc_axi_bridge_0_1' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_gpmc_axi_bridge_0_1_stub.vhdl:6' bound to instance 'gpmc_axi_bridge_1' of component 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:798]
+INFO: [Synth 8-638] synthesizing module 'design_1_gpmc_axi_bridge_0_1' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_gpmc_axi_bridge_0_1_stub.vhdl:47]
+INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_0_0' declared at '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'design_1_proc_sys_reset_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:828]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/.Xil/Vivado-13605-murtyms-Z270X-Gaming-7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/synth/design_1.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:51]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
+INFO: [Synth 8-113] binding component instance 'IOBUF_data' to cell 'IOBUF' [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:332]
 INFO: [Synth 8-256] done synthesizing module 'HARRIS_RADAR_TOP' (0#1) [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:273]
 WARNING: [Synth 8-3848] Net GPMC_WAIT in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:201]
 WARNING: [Synth 8-3848] Net ARINC_429_CS_N in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:207]
@@ -110,7 +112,6 @@ WARNING: [Synth 8-3848] Net TEMP_SENSE_CS_N in module/entity HARRIS_RADAR_TOP do
 WARNING: [Synth 8-3848] Net TEMP_SENSE_SCK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:236]
 WARNING: [Synth 8-3848] Net TX_EN in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:238]
 WARNING: [Synth 8-3848] Net FPGA_SPI_MISO in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:242]
-WARNING: [Synth 8-3848] Net FPGA_DEBUG_HEAD in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:263]
 WARNING: [Synth 8-3848] Net FPGA_DEBUG_MIC_CLK in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:264]
 WARNING: [Synth 8-3848] Net FPGA_DEBUG_MICA in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:266]
 WARNING: [Synth 8-3848] Net FPGA_DEBUG_MICB in module/entity HARRIS_RADAR_TOP does not have driver. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/sources_1/new/HARRIS_RADAR_TOP.vhd:267]
@@ -155,13 +156,6 @@ WARNING: [Synth 8-7129] Port TX_EN[2] in module HARRIS_RADAR_TOP is either uncon
 WARNING: [Synth 8-7129] Port TX_EN[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port TX_EN[0] in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FPGA_SPI_MISO in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[6] in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[5] in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[4] in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[3] in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[2] in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[1] in module HARRIS_RADAR_TOP is either unconnected or has no load
-WARNING: [Synth 8-7129] Port FPGA_DEBUG_HEAD[0] in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FPGA_DEBUG_MIC_CLK in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[31] in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICA[30] in module HARRIS_RADAR_TOP is either unconnected or has no load
@@ -215,20 +209,27 @@ WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[15] in module HARRIS_RADAR_TOP is e
 WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[14] in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[13] in module HARRIS_RADAR_TOP is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[12] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[11] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[10] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[9] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[8] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[7] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[6] in module HARRIS_RADAR_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FPGA_DEBUG_MICB[5] in module HARRIS_RADAR_TOP is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.852 ; gain = 575.125 ; free physical = 393 ; free virtual = 7746
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2390.883 ; gain = 582.125 ; free physical = 2272 ; free virtual = 9960
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.852 ; gain = 575.125 ; free physical = 393 ; free virtual = 7746
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2390.883 ; gain = 582.125 ; free physical = 2272 ; free virtual = 9960
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.852 ; gain = 575.125 ; free physical = 393 ; free virtual = 7746
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2390.883 ; gain = 582.125 ; free physical = 2272 ; free virtual = 9960
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2384.820 ; gain = 0.000 ; free physical = 393 ; free virtual = 7746
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2393.852 ; gain = 0.000 ; free physical = 2272 ; free virtual = 9960
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -255,6 +256,8 @@ Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/source
 Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0/design_1_axi_crossbar_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/axi_crossbar_0'
 Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_Blinky_0_0/design_1_Blinky_0_0/design_1_Blinky_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/Blinky_0'
 Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_Blinky_0_0/design_1_Blinky_0_0/design_1_Blinky_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/Blinky_0'
+Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'Radar_Design_i/design_1_i/axi_gpio_0'
 Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc]
 WARNING: [Vivado 12-584] No ports matched 'ADI_RX?_LVDS_DOUT_?[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:4]
 WARNING: [Vivado 12-584] No ports matched 'ADI_TX?_LVDS_DIN_?[?]'. [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.srcs/constrs_1/imports/constraints/laysan_rrh_top_pins.xdc:5]
@@ -425,32 +428,32 @@ Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth
 Finished Parsing XDC File [/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2465.621 ; gain = 0.000 ; free physical = 438 ; free virtual = 7789
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2472.684 ; gain = 0.000 ; free physical = 2300 ; free virtual = 9978
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 16 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2465.656 ; gain = 0.000 ; free physical = 438 ; free virtual = 7789
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2472.719 ; gain = 0.000 ; free physical = 2300 ; free virtual = 9978
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2465.656 ; gain = 658.930 ; free physical = 482 ; free virtual = 7826
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2472.719 ; gain = 663.961 ; free physical = 2338 ; free virtual = 10016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tffg1156-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 482 ; free virtual = 7826
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2480.688 ; gain = 671.930 ; free physical = 2338 ; free virtual = 10016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 482 ; free virtual = 7826
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2480.688 ; gain = 671.930 ; free physical = 2338 ; free virtual = 10016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 484 ; free virtual = 7829
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2480.688 ; gain = 671.930 ; free physical = 2347 ; free virtual = 10026
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -472,26 +475,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2473.625 ; gain = 666.898 ; free physical = 490 ; free virtual = 7840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2480.688 ; gain = 671.930 ; free physical = 2372 ; free virtual = 10052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'CLK_25MHZ_FPGA'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2543.625 ; gain = 736.898 ; free physical = 402 ; free virtual = 7755
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2544.688 ; gain = 735.930 ; free physical = 2345 ; free virtual = 10027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2543.625 ; gain = 736.898 ; free physical = 402 ; free virtual = 7755
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2545.688 ; gain = 736.930 ; free physical = 2345 ; free virtual = 10027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2554.648 ; gain = 747.922 ; free physical = 395 ; free virtual = 7747
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2555.703 ; gain = 746.945 ; free physical = 2330 ; free virtual = 10012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -509,37 +512,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -556,9 +559,10 @@ Report BlackBoxes:
 |5     |design_1_ad9361_spi_generic_2_0 |         1|
 |6     |design_1_ad9361_spi_generic_3_1 |         1|
 |7     |design_1_axi_crossbar_0_0       |         1|
-|8     |design_1_clk_wiz_0_0            |         1|
-|9     |design_1_gpmc_axi_bridge_0_1    |         1|
-|10    |design_1_proc_sys_reset_0_0     |         1|
+|8     |design_1_axi_gpio_0_0           |         1|
+|9     |design_1_clk_wiz_0_0            |         1|
+|10    |design_1_gpmc_axi_bridge_0_1    |         1|
+|11    |design_1_proc_sys_reset_0_0     |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -572,39 +576,40 @@ Report Cell Usage:
 |5     |design_1_ad9361_spi_generic_2_0_bbox |     1|
 |6     |design_1_ad9361_spi_generic_3_1_bbox |     1|
 |7     |design_1_axi_crossbar_0_0_bbox       |     1|
-|8     |design_1_clk_wiz_0_0_bbox            |     1|
-|9     |design_1_gpmc_axi_bridge_0_1_bbox    |     1|
-|10    |design_1_proc_sys_reset_0_0_bbox     |     1|
-|11    |IBUF                                 |    13|
-|12    |IOBUF                                |    16|
-|13    |OBUF                                 |    17|
-|14    |OBUFT                                |   113|
+|8     |design_1_axi_gpio_0_0_bbox           |     1|
+|9     |design_1_clk_wiz_0_0_bbox            |     1|
+|10    |design_1_gpmc_axi_bridge_0_1_bbox    |     1|
+|11    |design_1_proc_sys_reset_0_0_bbox     |     1|
+|12    |IBUF                                 |    13|
+|13    |IOBUF                                |    16|
+|14    |OBUF                                 |    24|
+|15    |OBUFT                                |   106|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2740.461 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.516 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 155 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2740.461 ; gain = 849.930 ; free physical = 228 ; free virtual = 7580
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2740.469 ; gain = 933.734 ; free physical = 228 ; free virtual = 7580
+Synthesis finished with 0 errors, 0 critical warnings and 148 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2741.516 ; gain = 850.922 ; free physical = 2193 ; free virtual = 9870
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2741.523 ; gain = 932.758 ; free physical = 2193 ; free virtual = 9870
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2740.469 ; gain = 0.000 ; free physical = 228 ; free virtual = 7580
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2741.523 ; gain = 0.000 ; free physical = 2193 ; free virtual = 9870
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2740.469 ; gain = 0.000 ; free physical = 404 ; free virtual = 7755
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2741.523 ; gain = 0.000 ; free physical = 2354 ; free virtual = 10031
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 16 instances
 
-Synth Design complete | Checksum: 21028c82
+Synth Design complete | Checksum: 667277be
 INFO: [Common 17-83] Releasing license: Synthesis
-72 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
+74 Infos, 288 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:36 . Memory (MB): peak = 2740.496 ; gain = 1114.762 ; free physical = 403 ; free virtual = 7755
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1877.523; main = 1877.523; forked = 282.847
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3476.684; main = 2740.465; forked = 995.055
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2764.473 ; gain = 0.000 ; free physical = 403 ; free virtual = 7755
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 2741.551 ; gain = 1115.816 ; free physical = 2359 ; free virtual = 10037
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1875.543; main = 1875.543; forked = 282.877
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3475.746; main = 2741.520; forked = 995.055
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.527 ; gain = 0.000 ; free physical = 2359 ; free virtual = 10037
 INFO: [Common 17-1381] The checkpoint '/home/murtyms/Radar/HarrisFMCWRadar/HarrisFMCWRadar.runs/synth_1/HARRIS_RADAR_TOP.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file HARRIS_RADAR_TOP_utilization_synth.rpt -pb HARRIS_RADAR_TOP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 14 21:35:47 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 18 21:06:21 2025...
